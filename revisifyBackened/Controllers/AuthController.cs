@@ -36,5 +36,12 @@ namespace revisifyBackened.Controllers
             return Ok(result);
         }
 
+        [HttpGet("Verify-Email")]
+        public async Task<IActionResult> VerifyEmail(string token, string email)
+        {
+            var verifyEmailResult = await _authService.ConfirmEmail(token, email);
+            return Ok(verifyEmailResult);
+        }
+
     }
 }
