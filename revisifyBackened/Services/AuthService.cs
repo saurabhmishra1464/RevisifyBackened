@@ -184,6 +184,29 @@ namespace revisifyBackened.Services
                 Data = null
             };
         }
+
+        public async Task<ApiResponse<object>> ConfirmEmail(string token, string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                throw new UserNotFoundException();
+
+            }
+            var result = await _userManager.ConfirmEmailAsync(user, token);
+            if (!result.Succeeded)
+            {
+                throw new EmailNotConfirmedException();
+            }
+
+            return new ApiResponse<object>
+            {
+                IsSuccess = true,
+                StatusCode = 200,
+                Message = "Email Verification Completed Succesfully",
+                Data = null
+            };
+        }
         private static ApplicationUser BuildUserFromRegistrationModel(RegistrationRequestDto model)
         {
             return new ApplicationUser

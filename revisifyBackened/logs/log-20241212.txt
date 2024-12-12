@@ -433,3 +433,8 @@ revisifyBackened.ExceptionHandelling.CustomException.EmailNotConfirmedException:
 2024-12-12 13:29:54.617 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
 2024-12-12 13:30:26.786 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 200 in 8644.2840 ms
 2024-12-12 13:30:31.012 +05:30 [INF] Email sent successfully to saurabhmishra1464@gmail.com, saurabhmishra1464@gmail.com
+2024-12-12 14:13:08.555 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-12 14:13:08.651 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-12 14:13:08.659 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-12 14:13:08.661 +05:30 [INF] Hosting environment: Development
+2024-12-12 14:13:08.663 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened

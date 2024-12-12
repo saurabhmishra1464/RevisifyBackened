@@ -7,5 +7,6 @@ namespace revisifyBackened.Interface
         Task<ApiResponse<object>> Register(RegistrationRequestDto model);
         Task<ApiResponse<UserProfile>> Login(LoginRequestDto model);
         Task<ApiResponse<object>> SendConfirmationEmail(string email);
+        Task<ApiResponse<object>> ConfirmEmail(string token, string email);
     }
 }
