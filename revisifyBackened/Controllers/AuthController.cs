@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using revisifyBackened.Interface;
 using revisifyBackened.Models.Dto;
-using revisifyBackened.Repository;
 
 namespace revisifyBackened.Controllers
 {
@@ -20,6 +20,20 @@ namespace revisifyBackened.Controllers
             var result = await _authService.Register(model);
             return Ok(result);
 
+        }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto model)
+        {
+            var result = await _authService.Login(model);
+            return Ok(result);
+        }
+
+        [HttpPost("SendConfirmationEmail")]
+        public async Task<IActionResult> SendConfirmationEmail(ResendEmailDto resendEmailDto)
+        {
+            var result = await _authService.SendConfirmationEmail(resendEmailDto.Email);
+            return Ok(result);
         }
 
     }

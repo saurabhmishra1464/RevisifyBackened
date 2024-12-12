@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+            .content h1 {
+                font-size: 26px;
+                color: #333333;
+                margin-bottom: 10px;
+            }
+
+            .content p {
+                font-size: 16px;
+                color: #555555;
+                line-height: 1.6;
+                margin: 10px 0;
+            }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            border-top: 1px solid #eaeaea;
+            margin-top: 20px;
+        }
+
+            .footer p {
+                font-size: 14px;
+                color: #888888;
+                margin: 5px 0;
+            }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .content h1 {
+                font-size: 22px;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Verify Your Email Address</h1>
+            <p>Hello, {{FirstName}}</p>
+            <p>Thank you for signing up with {{SchoolName}}. Please click the button below to verify your email address and complete your registration.</p>
+            <a href="{{resetLink}}" class="button">Verify Email</a>
+            <p>If you did not sign up for an account, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 {{SchoolName}}. All rights reserved.</p>
+            <p>Contact us:{{SchoolDomain}}</p>
+        </div>
+    </div>
+</body>
+</html>

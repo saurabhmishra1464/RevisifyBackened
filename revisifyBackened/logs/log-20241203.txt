@@ -1,0 +1,36 @@
+2024-12-03 22:16:00.965 +05:30 [FTL] Application startup exception
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2024-12-03 22:16:01.081 +05:30 [ERR] Hosting failed to start
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });' or configure to generate a 'ProblemDetails' response in 'service.AddProblemDetails()'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener, IEnumerable`1 exceptionHandlers, IMeterFactory meterFactory, IProblemDetailsService problemDetailsService)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass5_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-12-03 22:16:43.283 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-03 22:16:43.345 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-03 22:16:43.354 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-03 22:16:43.355 +05:30 [INF] Hosting environment: Development
+2024-12-03 22:16:43.356 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2024-12-03 22:17:29.386 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-03 22:17:29.439 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-03 22:17:29.444 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-03 22:17:29.446 +05:30 [INF] Hosting environment: Development
+2024-12-03 22:17:29.448 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2024-12-03 22:17:45.272 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-03 22:17:45.350 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-03 22:17:45.354 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-03 22:17:45.356 +05:30 [INF] Hosting environment: Development
+2024-12-03 22:17:45.357 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2024-12-03 22:19:01.664 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-03 22:19:01.715 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-03 22:19:01.724 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-03 22:19:01.730 +05:30 [INF] Hosting environment: Development
+2024-12-03 22:19:01.736 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
