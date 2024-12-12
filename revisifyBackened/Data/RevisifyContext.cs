@@ -10,7 +10,8 @@ namespace revisifyBackened.Data
         public RevisifyContext(DbContextOptions<RevisifyContext> options) : base(options) { }
     
         public DbSet<Product> Products { get; set; }
-    
-    
+        public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
+
+
     }
 }
