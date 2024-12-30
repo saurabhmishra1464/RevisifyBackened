@@ -518,182 +518,175 @@ c) Using a private method
 d) Using reflection
 Answer: a) Using a constructor
 
-75. What is the purpose of the `app.UseDeveloperExceptionPage()` middleware?
-a) To enable custom exception handling in production
-b) To display detailed error pages during development
-c) To log all requests
-d) To configure routing
-Answer: b) To display detailed error pages during development
-
-76. What does the `services.AddControllers()` method do in ASP.NET Core?
+75. What does the `services.AddControllers()` method do in ASP.NET Core?
 a) Adds support for MVC and API controllers
 b) Configures routing
 c) Adds static file support
 d) Registers middleware for exception handling
 Answer: a) Adds support for MVC and API controllers
 
-77. Which of the following is used to store sensitive configuration data during development?
+76. Which of the following is used to store sensitive configuration data during development?
 a) appsettings.json
 b) Secret Manager
 c) Environment Variables
 d) Both b and c
 Answer: d) Both b and c
 
-78. Which middleware component is required to serve Razor Pages?
+77. Which middleware component is required to serve Razor Pages?
 a) UseEndpoints
 b) UseRazorPages
 c) MapRazorPages
 d) AddRazorPages
 Answer: c) MapRazorPages
 
-79. How do you register a service with singleton lifetime in ASP.NET Core?
+78. How do you register a service with singleton lifetime in ASP.NET Core?
 a) services.AddSingleton<TService>();
 b) services.AddScoped<TService>();
 c) services.AddTransient<TService>();
 d) services.RegisterSingleton<TService>();
 Answer: a) services.AddSingleton<TService>();
 
-80. What does the `IConfiguration` interface provide access to?
+79. What does the `IConfiguration` interface provide access to?
 a) Logging services
 b) Middleware components
 c) Configuration settings
 d) Database services
 Answer: c) Configuration settings
 
-81. What is the default JSON library used in ASP.NET Core 3.0 and later?
+80. What is the default JSON library used in ASP.NET Core 3.0 and later?
 a) Newtonsoft.Json
 b) System.Text.Json
 c) Json.NET
 d) ASPNet.Json
 Answer: b) System.Text.Json
 
-82. What is the purpose of the `Configure` method in the `Startup` class?
+81. What is the purpose of the `Configure` method in the `Startup` class?
 a) To configure database settings
 b) To configure the request processing pipeline
 c) To register application services
 d) To initialize logging
 Answer: b) To configure the request processing pipeline
 
-83. Which attribute allows defining a default route in ASP.NET Core controllers?
+82. Which attribute allows defining a default route in ASP.NET Core controllers?
 a) [Route]
 b) [HttpGet]
 c) [ApiController]
 d) [DefaultRoute]
 Answer: a) [Route]
 
-84. How can you specify a default value for a route parameter in ASP.NET Core?
+83. How can you specify a default value for a route parameter in ASP.NET Core?
 a) Using the `[RouteDefault]` attribute
 b) Setting the default value in `appsettings.json`
 c) Using the `routes.MapDefaultRoute` method
 d) Specifying the default value in the route template
 Answer: d) Specifying the default value in the route template
 
-85. Which package is required to enable Entity Framework Core in a .NET Core project?
+84. Which package is required to enable Entity Framework Core in a .NET Core project?
 a) Microsoft.EntityFrameworkCore
 b) Microsoft.EntityFramework
 c) Microsoft.Database.EF
 d) Microsoft.CoreEF
 Answer: a) Microsoft.EntityFrameworkCore
 
-86. What is the primary purpose of the `Startup` class in an ASP.NET Core application?
+85. What is the primary purpose of the `Startup` class in an ASP.NET Core application?
 a) To initialize the database
 b) To configure services and middleware
 c) To handle logging
 d) To define application settings
 Answer: b) To configure services and middleware
 
-87. Which HTTP status code indicates that an API resource was successfully created?
+86. Which HTTP status code indicates that an API resource was successfully created?
 a) 200 OK
 b) 201 Created
 c) 204 No Content
 d) 400 Bad Request
 Answer: b) 201 Created
 
-88. How do you configure CORS in an ASP.NET Core application?
+87. How do you configure CORS in an ASP.NET Core application?
 a) UseCORS
 b) ConfigureCORS
 c) services.AddCors()
 d) app.UseCorsPolicy()
 Answer: c) services.AddCors()
 
-89. Which namespace is used for working with dependency injection in ASP.NET Core?
+88. Which namespace is used for working with dependency injection in ASP.NET Core?
 a) Microsoft.Extensions.DependencyInjection
 b) Microsoft.AspNetCore.DI
 c) System.DI
 d) Microsoft.AspNetCore.DependencyInjection
 Answer: a) Microsoft.Extensions.DependencyInjection
 
-90. How can you run an ASP.NET Core application on a specific URL?
+89. How can you run an ASP.NET Core application on a specific URL?
 a) Using the `UseUrls` method in `Program.cs`
 b) Specifying the URL in `appsettings.json`
 c) Setting the URL in environment variables
 d) All of the above
 Answer: d) All of the above
 
-91. What does the `[ApiController]` attribute do in ASP.NET Core?
+90. What does the `[ApiController]` attribute do in ASP.NET Core?
 a) Enables MVC routing
 b) Adds automatic model state validation
 c) Logs API requests
 d) Configures API versioning
 Answer: b) Adds automatic model state validation
 
-92. How do you enable session state in ASP.NET Core?
+91. How do you enable session state in ASP.NET Core?
 a) services.AddSession()
 b) app.UseSession()
 c) Both a and b
 d) sessions.Enable()
 Answer: c) Both a and b
 
-93. Which tool is used to migrate database schema in Entity Framework Core?
+92. Which tool is used to migrate database schema in Entity Framework Core?
 a) EF Console
 b) dotnet ef migrations
 c) dotnet ef database update
 d) Both b and c
 Answer: d) Both b and c
 
-94. How do you specify that a controller action returns a JSON result?
+93. How do you specify that a controller action returns a JSON result?
 a) By adding `[Produces("application/json")]`
 b) By returning `JsonResult`
 c) By setting the content type in `IActionResult`
 d) All of the above
 Answer: d) All of the above
 
-95. Which method ensures HTTPS is required for all requests in ASP.NET Core?
+94. Which method ensures HTTPS is required for all requests in ASP.NET Core?
 a) UseHttpsOnly
 b) RequireHttps
 c) UseHttpsRedirection
 d) app.EnforceHttps()
 Answer: c) UseHttpsRedirection
 
-96. What is the purpose of the `dotnet restore` command?
+95. What is the purpose of the `dotnet restore` command?
 a) To build the project
 b) To restore NuGet package dependencies
 c) To deploy the application
 d) To update the project configuration
 Answer: b) To restore NuGet package dependencies
 
-97. What does the `Program.cs` file do in an ASP.NET Core application?
+96. What does the `Program.cs` file do in an ASP.NET Core application?
 a) Initializes the application and its host
 b) Configures middleware
 c) Handles database connections
 d) Manages dependency injection
 Answer: a) Initializes the application and its host
 
-98. What is the command to publish a .NET Core application?
+97. What is the command to publish a .NET Core application?
 a) dotnet publish
 b) dotnet deploy
 c) dotnet release
 d) dotnet package
 Answer: a) dotnet publish
 
-99. How can you enable detailed SQL logging in Entity Framework Core?
+98. How can you enable detailed SQL logging in Entity Framework Core?
 a) By configuring `DbContext` options
 b) Using `LogTo` method in `DbContext`
 c) Enabling SQL logging in `appsettings.json`
 d) All of the above
 Answer: d) All of the above
 
-100. Which middleware is used for authentication in ASP.NET Core?
+99. Which middleware is used for authentication in ASP.NET Core?
 a) app.UseAuthentication()
 b) app.UseAuthorization()
 c) app.EnableAuthentication()

@@ -1,4 +1,5 @@
-﻿using revisifyBackened.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using revisifyBackened.Data;
 using revisifyBackened.Interface.IRepository;
 using revisifyBackened.Models;
 
@@ -15,25 +16,28 @@ namespace revisifyBackened.Repository
 
         public async Task SaveQuestionsAsync(List<Question> questions)
         {
-
             foreach (var question in questions)
             {
-                // Ensure Subject is correctly linked
-                //var subject = await _dbContext.Subjects.FindAsync(question.SubjectId);
-                //if (subject == null)
-                //    throw new Exception($"Subject with ID {question.SubjectId} not found.");
-
-                // Link Options to Question
                 foreach (var option in question.Options)
                 {
-                    option.Question = question; // Establish relationship
+                    option.QuestionId = question.Id; // Use QuestionId instead
                 }
-
                 _dbContext.Questions.Add(question);
             }
-
             await _dbContext.SaveChangesAsync();
+        }
 
+        public async Task SaveImageAsync(Question question)
+        {
+
+            _dbContext.Questions.Update(question);
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<Question> GetQuestionByIdAsync(int questionId)
+        {
+            return await _dbContext.Questions
+                .FirstOrDefaultAsync(q => q.Id == questionId);
         }
 
     }
