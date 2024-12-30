@@ -11,7 +11,11 @@ namespace revisifyBackened.Data
     
         public DbSet<Product> Products { get; set; }
         public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
-
+        public DbSet<Option> Options { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
 
     }
+
+
 }

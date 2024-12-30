@@ -8,6 +8,16 @@ using revisifyBackened.Models;
 using revisifyBackened.Models.Dto;
 using revisifyBackened.Utilities;
 using System.Web;
+using System.Xml;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using Microsoft.VisualBasic.FileIO;
+using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Text.RegularExpressions;
+using revisifyBackened.Interface.IRepository;
 
 namespace revisifyBackened.Services
 {
@@ -16,6 +26,7 @@ namespace revisifyBackened.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ITokenService _tokenService;
+        private readonly IQuestionRepository _questionRepository;
         private readonly IEmailService _emailService;
         private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment _env;
@@ -31,7 +42,8 @@ namespace revisifyBackened.Services
             ILogger<AuthService> logger,
             GenerateLink generateLink,
             IHttpContextAccessor httpContextAccessor,
-            IOptions<JWTService> options
+            IOptions<JWTService> options,
+            IQuestionRepository questionRepository
 
             )
         {
@@ -45,6 +57,7 @@ namespace revisifyBackened.Services
             this._logger = logger;
             _httpContextAccessor = httpContextAccessor;
             _jwtService = options.Value;
+            _questionRepository = questionRepository;
         }
         public async Task<ApiResponse<object>> Register(RegistrationRequestDto model)
         {
@@ -76,7 +89,7 @@ namespace revisifyBackened.Services
 
             var token = await _tokenService.GenerateConfirmEmailToken(user.Email);
 
-            var verifyEmailLink = GenerateVerifyEmailLink(user.Email, token);
+            var verifyEmailLink = _generateLink.GenerateVerifyEmailLink(user.Email, token);
 
             List<string> toEmailLoist = null;
             toEmailLoist ??= new List<string>();
@@ -110,7 +123,7 @@ namespace revisifyBackened.Services
             if (user == null)
             {
                 _logger.LogWarning($"User with email {loginDto.UserName} was not found");
-                throw new NotFoundException($"User with email {loginDto.UserName} was not found");
+                throw new UserNotFoundException();
             }
 
             bool isValidUser = await _userManager.CheckPasswordAsync(user, loginDto.Password);
@@ -147,7 +160,9 @@ namespace revisifyBackened.Services
             return new ApiResponse<UserProfile>()
             {
                 Data = loggedInUser,
-                Message = "Logged In Succesfully"
+                Message = "Logged In Succesfully",
+                StatusCode = 200,
+                IsSuccess = true
             };
         }
 
@@ -185,6 +200,43 @@ namespace revisifyBackened.Services
             };
         }
 
+        public async Task<string> SaveQuestionsAsync(IFormFile file, int SubjectId)
+        {
+            if (file == null || file.Length == 0)
+            {
+                throw new ArgumentException("No file uploaded.");
+            }
+            // Save the uploaded file temporarily
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles", file.FileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            // Read the content from the file
+            string rawData = System.IO.File.ReadAllText(filePath);
+
+            // Convert the raw data to a list of questions using the ConvertToJson method
+            var questions = ConvertToJson(rawData, SubjectId);
+            await _questionRepository.SaveQuestionsAsync(questions);
+            // Serialize the questions to JSON format
+            string json = JsonSerializer.Serialize(questions, new JsonSerializerOptions { WriteIndented = true });
+
+            // Define the output file path for the JSON file
+            var outputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "OutputFiles", "questions.json");
+
+            // Ensure the output directory exists
+            var outputDir = Path.GetDirectoryName(outputFilePath);
+            if (!Directory.Exists(outputDir))
+            {
+                Directory.CreateDirectory(outputDir);
+            }
+
+            // Save the JSON to a file
+            System.IO.File.WriteAllText(outputFilePath, json);
+
+            return outputFilePath; // Return the output file path or any result you need
+        } 
         public async Task<ApiResponse<object>> ConfirmEmail(string token, string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
@@ -219,14 +271,14 @@ namespace revisifyBackened.Services
             };
         }
 
-        public string GenerateVerifyEmailLink(string email, string token)
-        {
-            var frontendUrl = _configuration["BaseUrls:Frontend"];
-            var encodedToken = HttpUtility.UrlEncode(token);
-            var encodedEmail = HttpUtility.UrlEncode(email);
+        //public string GenerateVerifyEmailLink(string email, string token)
+        //{
+        //    var frontendUrl = _configuration["BaseUrls:Frontend"];
+        //    var encodedToken = HttpUtility.UrlEncode(token);
+        //    var encodedEmail = HttpUtility.UrlEncode(email);
 
-            return $"{frontendUrl}/auth/verifyEmail?token={encodedToken}&email={encodedEmail}";
-        }
+        //    return $"{frontendUrl}/auth/verifyEmail?token={encodedToken}&email={encodedEmail}";
+        //}
 
         public string LoadHtmlTemplate(string templatePath, string resetLink, string firstName, string to)
         {
@@ -260,5 +312,68 @@ namespace revisifyBackened.Services
                 IEmailConfirmed = user.EmailConfirmed,
             };
         }
+
+        static List<Question> ConvertToJson(string rawData, int SubjectId)
+        {
+            var questions = new List<Question>();
+            var questionBlocks = rawData.Split(new[] { "\r\n\r\n", "\n\n" }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var block in questionBlocks)
+            {
+                var lines = block.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                if (lines.Length >= 5) // Question + 4 options + answer
+                {
+                    var questionMatch = Regex.Match(lines[0], @"(\d+)\.\s+(.+)");
+                    if (questionMatch.Success)
+                    {
+                        var questionNumber = int.Parse(questionMatch.Groups[1].Value);
+                        var questionText = questionMatch.Groups[2].Value.Trim();
+
+                        // Parse options with their keys
+                        var options = new List<Option>();
+                        var optionLines = lines.Skip(1).Take(4);
+                        foreach (var line in optionLines)
+                        {
+                            var optionMatch = Regex.Match(line, @"^([a-d])\)\s+(.+)");
+                            if (optionMatch.Success)
+                            {
+                                options.Add(new Option
+                                {
+                                    OptionText = optionMatch.Groups[1].Value,
+                                    Value = optionMatch.Groups[2].Value.Trim(),
+                                    QuestionId = questionNumber,
+                                }); ;
+                            }
+                        }
+
+                        // Find and extract the correct answer
+                        string correctAnswer = "";
+                        foreach (var line in lines)
+                        {
+                            if (line.Trim().StartsWith("Answer:"))
+                            {
+                                var answerMatch = Regex.Match(line, @"Answer:\s+([a-d])");
+                                if (answerMatch.Success)
+                                {
+                                    correctAnswer = answerMatch.Groups[1].Value;
+                                    break;
+                                }
+                            }
+                        }
+
+                        questions.Add(new Question
+                        {
+                            QuestionText = questionText,
+                            Options = options,
+                            CorrectOption = correctAnswer,
+                            SubjectId = SubjectId
+                        });
+                    }
+                }
+            }
+            return questions;
+        }
     }
+
+    
 }

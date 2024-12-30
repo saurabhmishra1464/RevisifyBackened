@@ -104,7 +104,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
         builder => builder
-            .WithOrigins("https://localhost:7777")  // Allow requests from frontend
+            .WithOrigins("http://localhost:3000")  // Allow requests from frontend
             .AllowAnyHeader()                     // Allow headers like Authorization
             .AllowAnyMethod()                     // Allow GET, POST, PUT, etc.
             .AllowCredentials());                 // Allow cookies (if needed)
@@ -118,6 +118,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
+builder.Services.AddScoped<IQuestionRepository, QuestionRepository>();
 builder.Services.AddScoped<GenerateLink>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

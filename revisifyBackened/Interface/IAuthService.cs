@@ -1,4 +1,5 @@
-﻿using revisifyBackened.Models.Dto;
+﻿using revisifyBackened.Models;
+using revisifyBackened.Models.Dto;
 
 namespace revisifyBackened.Interface
 {
@@ -8,5 +9,6 @@ namespace revisifyBackened.Interface
         Task<ApiResponse<UserProfile>> Login(LoginRequestDto model);
         Task<ApiResponse<object>> SendConfirmationEmail(string email);
         Task<ApiResponse<object>> ConfirmEmail(string token, string email);
+        Task<string> SaveQuestionsAsync(IFormFile file, int SubjectId);
     }
 }

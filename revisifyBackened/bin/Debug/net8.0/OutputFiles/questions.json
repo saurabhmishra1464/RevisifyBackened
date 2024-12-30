@@ -1,0 +1,2302 @@
+[
+  {
+    "Id": 1,
+    "QuestionText": "What is .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A proprietary framework by Microsoft"
+      },
+      {
+        "OptionText": "b",
+        "Value": "A cross-platform, open-source framework for building modern applications"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A mobile-only development framework"
+      },
+      {
+        "OptionText": "d",
+        "Value": "None of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 2,
+    "QuestionText": "Which of the following is not a feature of .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Cross-platform support"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Dependency Injection"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Only supports C# language"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Modular architecture"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 3,
+    "QuestionText": "Which command is used to create a new .NET Core project?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet generate"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet new"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet start"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet init"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 4,
+    "QuestionText": "What does Kestrel in .NET Core refer to?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A database engine"
+      },
+      {
+        "OptionText": "b",
+        "Value": "A front-end framework"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A cross-platform web server"
+      },
+      {
+        "OptionText": "d",
+        "Value": "A logging library"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 5,
+    "QuestionText": "What is the default package manager for .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "npm"
+      },
+      {
+        "OptionText": "b",
+        "Value": "NuGet"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Maven"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Composer"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 6,
+    "QuestionText": "Which file in a .NET Core application is used to configure app-wide settings?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "config.xml"
+      },
+      {
+        "OptionText": "b",
+        "Value": "app.config"
+      },
+      {
+        "OptionText": "c",
+        "Value": "appsettings.json"
+      },
+      {
+        "OptionText": "d",
+        "Value": "settings.ini"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 7,
+    "QuestionText": "What is the purpose of Startup.cs in a .NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Handles database connections"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Manages middleware configuration and services"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Executes background tasks"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Manages routing only"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 8,
+    "QuestionText": "How do you restore dependencies in a .NET Core project?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet restore"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet build"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet run"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet dependencies"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 9,
+    "QuestionText": "Which of these commands publishes a .NET Core application for deployment?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet deploy"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet package"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet publish"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet export"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 10,
+    "QuestionText": "What is Middleware in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A library for creating web servers"
+      },
+      {
+        "OptionText": "b",
+        "Value": "A component that processes HTTP requests and responses"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A database management system"
+      },
+      {
+        "OptionText": "d",
+        "Value": "A type of client-side script"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 11,
+    "QuestionText": "Which method in Startup.cs is used to configure middleware in an app?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "ConfigureMiddleware"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Configure"
+      },
+      {
+        "OptionText": "c",
+        "Value": "SetupMiddleware"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Setup"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 12,
+    "QuestionText": "Which interface is used to implement Dependency Injection in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "IServiceProvider"
+      },
+      {
+        "OptionText": "b",
+        "Value": "IServiceCollection"
+      },
+      {
+        "OptionText": "c",
+        "Value": "IDependencyProvider"
+      },
+      {
+        "OptionText": "d",
+        "Value": "IMiddlewareProvider"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 13,
+    "QuestionText": "In .NET Core, which method is used to add MVC support?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "services.AddMvcCore()"
+      },
+      {
+        "OptionText": "b",
+        "Value": "services.AddMvc()"
+      },
+      {
+        "OptionText": "c",
+        "Value": "services.AddController()"
+      },
+      {
+        "OptionText": "d",
+        "Value": "services.EnableMvc()"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 14,
+    "QuestionText": "What does the IConfiguration interface in .NET Core provide?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Logging support"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Access to app configuration settings"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Routing definitions"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Middleware extensions"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 15,
+    "QuestionText": "What is the default lifespan of a service registered as Scoped in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Per request"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Singleton for the application"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Lifetime of a thread"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Application-wide"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 16,
+    "QuestionText": "How do you enable Razor Pages in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "services.AddRazorPages()"
+      },
+      {
+        "OptionText": "b",
+        "Value": "services.EnableRazor()"
+      },
+      {
+        "OptionText": "c",
+        "Value": "services.AddMvcCore()"
+      },
+      {
+        "OptionText": "d",
+        "Value": "services.EnableMvc()"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 17,
+    "QuestionText": "What is the command to run a .NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet run"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet start"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet execute"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet launch"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 18,
+    "QuestionText": "What is the name of the cross-platform framework for building APIs in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "REST API Core"
+      },
+      {
+        "OptionText": "b",
+        "Value": "ASP.NET Core"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Web API Core"
+      },
+      {
+        "OptionText": "d",
+        "Value": "API.NET"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 19,
+    "QuestionText": "Which logging provider is built-in with .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Log4j"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Serilog"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Console"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Winston"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 20,
+    "QuestionText": "What is the role of UseEndpoints in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Registers middleware"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Configures database"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Defines routing endpoints"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Configures app settings"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 21,
+    "QuestionText": "Which of the following methods is used to configure services in the DI container?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "ConfigureServices"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Configure"
+      },
+      {
+        "OptionText": "c",
+        "Value": "AddServices"
+      },
+      {
+        "OptionText": "d",
+        "Value": "InitServices"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 22,
+    "QuestionText": "Which HTTP status code represents \u0022Not Found\u0022?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "200"
+      },
+      {
+        "OptionText": "b",
+        "Value": "400"
+      },
+      {
+        "OptionText": "c",
+        "Value": "404"
+      },
+      {
+        "OptionText": "d",
+        "Value": "500"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 23,
+    "QuestionText": "Which protocol is used by default for communication in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "FTP"
+      },
+      {
+        "OptionText": "b",
+        "Value": "HTTP"
+      },
+      {
+        "OptionText": "c",
+        "Value": "SMTP"
+      },
+      {
+        "OptionText": "d",
+        "Value": "SSH"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 24,
+    "QuestionText": "What does the term \u0022cross-platform\u0022 mean in the context of .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "It supports only Windows operating systems"
+      },
+      {
+        "OptionText": "b",
+        "Value": "It can run on multiple operating systems like Windows, Linux, and macOS"
+      },
+      {
+        "OptionText": "c",
+        "Value": "It only runs on cloud-based systems"
+      },
+      {
+        "OptionText": "d",
+        "Value": "None of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 25,
+    "QuestionText": "Which keyword is used to declare a Razor directive?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "#"
+      },
+      {
+        "OptionText": "b",
+        "Value": "@"
+      },
+      {
+        "OptionText": "c",
+        "Value": "$"
+      },
+      {
+        "OptionText": "d",
+        "Value": "%"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 26,
+    "QuestionText": "In which file is the Kestrel server typically configured?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Program.cs"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Startup.cs"
+      },
+      {
+        "OptionText": "c",
+        "Value": "appsettings.json"
+      },
+      {
+        "OptionText": "d",
+        "Value": "web.config"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 27,
+    "QuestionText": "What is the primary purpose of the UseRouting middleware in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To serve static files"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure routes"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To add logging"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To manage database connections"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 28,
+    "QuestionText": "How can you enable CORS in a .NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseCorsMiddleware"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseCors"
+      },
+      {
+        "OptionText": "c",
+        "Value": "ConfigureCors"
+      },
+      {
+        "OptionText": "d",
+        "Value": "AddCorsPolicy"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 29,
+    "QuestionText": "What is the file extension for Razor Pages?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": ".html"
+      },
+      {
+        "OptionText": "b",
+        "Value": ".razor"
+      },
+      {
+        "OptionText": "c",
+        "Value": ".cshtml"
+      },
+      {
+        "OptionText": "d",
+        "Value": ".asp"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 30,
+    "QuestionText": "Which class is responsible for handling HTTP requests and responses?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "HttpRequestHandler"
+      },
+      {
+        "OptionText": "b",
+        "Value": "HttpContext"
+      },
+      {
+        "OptionText": "c",
+        "Value": "HttpService"
+      },
+      {
+        "OptionText": "d",
+        "Value": "MiddlewareManager"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 31,
+    "QuestionText": "What is the default port used by Kestrel for an ASP.NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "80"
+      },
+      {
+        "OptionText": "b",
+        "Value": "443"
+      },
+      {
+        "OptionText": "c",
+        "Value": "5000"
+      },
+      {
+        "OptionText": "d",
+        "Value": "3000"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 32,
+    "QuestionText": "Which of these is used to apply authorization policies in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "AddAuthorizationPolicy"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseAuthorization"
+      },
+      {
+        "OptionText": "c",
+        "Value": "ApplyAuthorization"
+      },
+      {
+        "OptionText": "d",
+        "Value": "EnableAuthorization"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 33,
+    "QuestionText": "What is the purpose of the \u0060IHostedService\u0060 interface?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To manage session state"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To run background services"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To handle exceptions"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To configure authentication"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 34,
+    "QuestionText": "Which of the following is NOT a lifecycle for DI services?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Singleton"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Scoped"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Per-thread"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Transient"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 35,
+    "QuestionText": "How do you specify a static file directory in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseStaticFiles"
+      },
+      {
+        "OptionText": "b",
+        "Value": "AddStaticFiles"
+      },
+      {
+        "OptionText": "c",
+        "Value": "ConfigureStaticFiles"
+      },
+      {
+        "OptionText": "d",
+        "Value": "SetStaticFiles"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 36,
+    "QuestionText": "What is the purpose of the \u0060MapControllerRoute\u0060 method?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To configure middleware"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To define route templates for controllers"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To log requests"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To set up static file paths"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 37,
+    "QuestionText": "What is the primary use of \u0060IOptions\u003CT\u003E\u0060 in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To configure database options"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To access strongly typed configuration settings"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To enable routing"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To register middleware"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 38,
+    "QuestionText": "How do you serve JSON data in a controller?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Use JsonSerializer"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Return a JsonResult"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Use JsonContent"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Return a View"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 39,
+    "QuestionText": "What is the purpose of the \u0060app.UseDeveloperExceptionPage()\u0060 middleware?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To display detailed error pages during development"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To log exceptions to a database"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To enable exception handling for production"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To restrict exceptions to admin users only"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 40,
+    "QuestionText": "Which command is used to update a package in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet restore"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet update"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet add package"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet upgrade"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 41,
+    "QuestionText": "Which framework is used for testing in .NET Core by default?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "NUnit"
+      },
+      {
+        "OptionText": "b",
+        "Value": "MSTest"
+      },
+      {
+        "OptionText": "c",
+        "Value": "xUnit"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Jasmine"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 42,
+    "QuestionText": "What is the purpose of the \u0060AddDbContext\u0060 method in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To enable logging"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To register the database context with the DI container"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To configure routing"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To add static files"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 43,
+    "QuestionText": "Which ASP.NET Core feature helps manage app secrets during development?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "appsettings.json"
+      },
+      {
+        "OptionText": "b",
+        "Value": "KeyVault"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Secret Manager"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Environment Variables"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 44,
+    "QuestionText": "What is the purpose of the \u0060HttpClient\u0060 class?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To handle authentication"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To send HTTP requests and receive HTTP responses"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To log requests"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To handle routing"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 45,
+    "QuestionText": "Which middleware is used for exception handling in production?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseDeveloperExceptionPage"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseCustomExceptionPage"
+      },
+      {
+        "OptionText": "c",
+        "Value": "UseExceptionHandler"
+      },
+      {
+        "OptionText": "d",
+        "Value": "UseProductionHandler"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 46,
+    "QuestionText": "What is the purpose of the \u0060ConfigureServices\u0060 method in the \u0060Startup.cs\u0060 file?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To configure middleware"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure dependency injection services"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To register routing"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To initialize the application"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 47,
+    "QuestionText": "Which lifecycle ensures that a new instance of a service is created each time it is requested?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Singleton"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Scoped"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Transient"
+      },
+      {
+        "OptionText": "d",
+        "Value": "None of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 48,
+    "QuestionText": "What does \u0060IActionResult\u0060 represent in an ASP.NET Core controller?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A model class"
+      },
+      {
+        "OptionText": "b",
+        "Value": "An interface for action results"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A database query result"
+      },
+      {
+        "OptionText": "d",
+        "Value": "None of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 49,
+    "QuestionText": "Which of the following is NOT a valid middleware method in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseEndpoints"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseAuthentication"
+      },
+      {
+        "OptionText": "c",
+        "Value": "UseDatabase"
+      },
+      {
+        "OptionText": "d",
+        "Value": "UseStaticFiles"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 50,
+    "QuestionText": "How do you enable HTTPS redirection in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseHttpsRedirection"
+      },
+      {
+        "OptionText": "b",
+        "Value": "EnableHttps"
+      },
+      {
+        "OptionText": "c",
+        "Value": "ConfigureHttps"
+      },
+      {
+        "OptionText": "d",
+        "Value": "AddHttps"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 51,
+    "QuestionText": "What is \u0060ViewBag\u0060 used for in Razor Pages?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Passing data from the controller to the view"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Storing user session information"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Querying database records"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Logging data"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 52,
+    "QuestionText": "Which of these is a valid return type for a controller action method?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "string"
+      },
+      {
+        "OptionText": "b",
+        "Value": "IActionResult"
+      },
+      {
+        "OptionText": "c",
+        "Value": "JsonResult"
+      },
+      {
+        "OptionText": "d",
+        "Value": "All of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 53,
+    "QuestionText": "What does the \u0060services.AddSwaggerGen()\u0060 method do?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Configures middleware for JSON serialization"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Enables Swagger API documentation generation"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Adds custom middleware for API versioning"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Configures the database"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 54,
+    "QuestionText": "Which environment variable is commonly used to set the environment in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "DOTNET_ENVIRONMENT"
+      },
+      {
+        "OptionText": "b",
+        "Value": "ASPNET_ENVIRONMENT"
+      },
+      {
+        "OptionText": "c",
+        "Value": "ENV"
+      },
+      {
+        "OptionText": "d",
+        "Value": "APPLICATION_ENVIRONMENT"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 55,
+    "QuestionText": "What is the primary role of the \u0060ModelState\u0060 object?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Handles authentication state"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Validates input data in controllers"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Manages dependency injection"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Configures application settings"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 56,
+    "QuestionText": "How can you ensure an API supports multiple versions in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseVersionedAPI"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseAPIVersioning"
+      },
+      {
+        "OptionText": "c",
+        "Value": "EnableAPIVersions"
+      },
+      {
+        "OptionText": "d",
+        "Value": "AddAPIVersioning"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 57,
+    "QuestionText": "What is the purpose of the \u0060FromBody\u0060 attribute in an API action method?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To map route parameters"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To bind the HTTP request body to a parameter"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To bind query string parameters"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To handle file uploads"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 58,
+    "QuestionText": "Which class is used for strongly-typed logging in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "ILogger"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Logger"
+      },
+      {
+        "OptionText": "c",
+        "Value": "LogWriter"
+      },
+      {
+        "OptionText": "d",
+        "Value": "LogHandler"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 59,
+    "QuestionText": "How do you specify custom middleware in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseMiddleware\u003CT\u003E"
+      },
+      {
+        "OptionText": "b",
+        "Value": "AddMiddleware"
+      },
+      {
+        "OptionText": "c",
+        "Value": "CreateMiddleware"
+      },
+      {
+        "OptionText": "d",
+        "Value": "CustomMiddleware"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 60,
+    "QuestionText": "What is the purpose of the \u0060app.UseCors\u0060 method?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To serve static files"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure Cross-Origin Resource Sharing policies"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To handle authentication"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To enable logging"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 61,
+    "QuestionText": "Which template is used for creating Web APIs in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet new web"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet new mvc"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet new webapi"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet new razor"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 62,
+    "QuestionText": "What does the \u0060Entity Framework\u0060 in .NET Core provide?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A front-end framework"
+      },
+      {
+        "OptionText": "b",
+        "Value": "An ORM for interacting with databases"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A testing framework"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Middleware for routing"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 63,
+    "QuestionText": "What is the purpose of \u0060services.AddHttpClient()\u0060 in DI?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To enable logging"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To register and manage \u0060HttpClient\u0060 instances"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To configure CORS"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To handle database connections"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 64,
+    "QuestionText": "How do you configure routing for Razor Pages in .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseMvc"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseRouting"
+      },
+      {
+        "OptionText": "c",
+        "Value": "MapRazorPages"
+      },
+      {
+        "OptionText": "d",
+        "Value": "AddRouting"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 65,
+    "QuestionText": "Which attribute ensures an API endpoint only accepts GET requests?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "[AcceptGet]"
+      },
+      {
+        "OptionText": "b",
+        "Value": "[HttpGet]"
+      },
+      {
+        "OptionText": "c",
+        "Value": "[OnlyGet]"
+      },
+      {
+        "OptionText": "d",
+        "Value": "[RouteGet]"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 66,
+    "QuestionText": "What is the command to add a NuGet package in a .NET Core project?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet nuget add"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet add package"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet install"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet package install"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 67,
+    "QuestionText": "Which attribute is used to define route parameters in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "[FromQuery]"
+      },
+      {
+        "OptionText": "b",
+        "Value": "[FromRoute]"
+      },
+      {
+        "OptionText": "c",
+        "Value": "[FromPath]"
+      },
+      {
+        "OptionText": "d",
+        "Value": "[FromBody]"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 68,
+    "QuestionText": "Which library is used for real-time communication in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "SignalR"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Entity Framework"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Swagger"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Blazor"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 69,
+    "QuestionText": "What is the purpose of the \u0060app.UseStaticFiles()\u0060 method?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To serve static files like CSS, JS, and images"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure database options"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To log HTTP requests"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To manage middleware"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 70,
+    "QuestionText": "What is Blazor in the context of .NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "A testing framework"
+      },
+      {
+        "OptionText": "b",
+        "Value": "A front-end framework for building web UIs with C#"
+      },
+      {
+        "OptionText": "c",
+        "Value": "A logging library"
+      },
+      {
+        "OptionText": "d",
+        "Value": "A database ORM"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 71,
+    "QuestionText": "What is the main purpose of Kestrel in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To serve as a reverse proxy server"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To act as a cross-platform web server"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To handle logging in the application"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To manage database connections"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 72,
+    "QuestionText": "Which command is used to run a .NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet compile"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet build"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet run"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet execute"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 73,
+    "QuestionText": "In which file are application settings typically stored in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "app.config"
+      },
+      {
+        "OptionText": "b",
+        "Value": "appsettings.json"
+      },
+      {
+        "OptionText": "c",
+        "Value": "web.config"
+      },
+      {
+        "OptionText": "d",
+        "Value": "settings.config"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 74,
+    "QuestionText": "How can you inject a dependency into a controller in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Using a constructor"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Using a static method"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Using a private method"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Using reflection"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 75,
+    "QuestionText": "What is the purpose of the \u0060app.UseDeveloperExceptionPage()\u0060 middleware?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To enable custom exception handling in production"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To display detailed error pages during development"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To log all requests"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To configure routing"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 76,
+    "QuestionText": "What does the \u0060services.AddControllers()\u0060 method do in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Adds support for MVC and API controllers"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Configures routing"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Adds static file support"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Registers middleware for exception handling"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 77,
+    "QuestionText": "Which of the following is used to store sensitive configuration data during development?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "appsettings.json"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Secret Manager"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Environment Variables"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Both b and c"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 78,
+    "QuestionText": "Which middleware component is required to serve Razor Pages?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseEndpoints"
+      },
+      {
+        "OptionText": "b",
+        "Value": "UseRazorPages"
+      },
+      {
+        "OptionText": "c",
+        "Value": "MapRazorPages"
+      },
+      {
+        "OptionText": "d",
+        "Value": "AddRazorPages"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 79,
+    "QuestionText": "How do you register a service with singleton lifetime in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "services.AddSingleton\u003CTService\u003E();"
+      },
+      {
+        "OptionText": "b",
+        "Value": "services.AddScoped\u003CTService\u003E();"
+      },
+      {
+        "OptionText": "c",
+        "Value": "services.AddTransient\u003CTService\u003E();"
+      },
+      {
+        "OptionText": "d",
+        "Value": "services.RegisterSingleton\u003CTService\u003E();"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 80,
+    "QuestionText": "What does the \u0060IConfiguration\u0060 interface provide access to?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Logging services"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Middleware components"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Configuration settings"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Database services"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 81,
+    "QuestionText": "What is the default JSON library used in ASP.NET Core 3.0 and later?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Newtonsoft.Json"
+      },
+      {
+        "OptionText": "b",
+        "Value": "System.Text.Json"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Json.NET"
+      },
+      {
+        "OptionText": "d",
+        "Value": "ASPNet.Json"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 82,
+    "QuestionText": "What is the purpose of the \u0060Configure\u0060 method in the \u0060Startup\u0060 class?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To configure database settings"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure the request processing pipeline"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To register application services"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To initialize logging"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 83,
+    "QuestionText": "Which attribute allows defining a default route in ASP.NET Core controllers?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "[Route]"
+      },
+      {
+        "OptionText": "b",
+        "Value": "[HttpGet]"
+      },
+      {
+        "OptionText": "c",
+        "Value": "[ApiController]"
+      },
+      {
+        "OptionText": "d",
+        "Value": "[DefaultRoute]"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 84,
+    "QuestionText": "How can you specify a default value for a route parameter in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Using the \u0060[RouteDefault]\u0060 attribute"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Setting the default value in \u0060appsettings.json\u0060"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Using the \u0060routes.MapDefaultRoute\u0060 method"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Specifying the default value in the route template"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 85,
+    "QuestionText": "Which package is required to enable Entity Framework Core in a .NET Core project?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Microsoft.EntityFrameworkCore"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Microsoft.EntityFramework"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Microsoft.Database.EF"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Microsoft.CoreEF"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 86,
+    "QuestionText": "What is the primary purpose of the \u0060Startup\u0060 class in an ASP.NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To initialize the database"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To configure services and middleware"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To handle logging"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To define application settings"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 87,
+    "QuestionText": "Which HTTP status code indicates that an API resource was successfully created?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "200 OK"
+      },
+      {
+        "OptionText": "b",
+        "Value": "201 Created"
+      },
+      {
+        "OptionText": "c",
+        "Value": "204 No Content"
+      },
+      {
+        "OptionText": "d",
+        "Value": "400 Bad Request"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 88,
+    "QuestionText": "How do you configure CORS in an ASP.NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseCORS"
+      },
+      {
+        "OptionText": "b",
+        "Value": "ConfigureCORS"
+      },
+      {
+        "OptionText": "c",
+        "Value": "services.AddCors()"
+      },
+      {
+        "OptionText": "d",
+        "Value": "app.UseCorsPolicy()"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 89,
+    "QuestionText": "Which namespace is used for working with dependency injection in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Microsoft.Extensions.DependencyInjection"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Microsoft.AspNetCore.DI"
+      },
+      {
+        "OptionText": "c",
+        "Value": "System.DI"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Microsoft.AspNetCore.DependencyInjection"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 90,
+    "QuestionText": "How can you run an ASP.NET Core application on a specific URL?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Using the \u0060UseUrls\u0060 method in \u0060Program.cs\u0060"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Specifying the URL in \u0060appsettings.json\u0060"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Setting the URL in environment variables"
+      },
+      {
+        "OptionText": "d",
+        "Value": "All of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 91,
+    "QuestionText": "What does the \u0060[ApiController]\u0060 attribute do in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Enables MVC routing"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Adds automatic model state validation"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Logs API requests"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Configures API versioning"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 92,
+    "QuestionText": "How do you enable session state in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "services.AddSession()"
+      },
+      {
+        "OptionText": "b",
+        "Value": "app.UseSession()"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Both a and b"
+      },
+      {
+        "OptionText": "d",
+        "Value": "sessions.Enable()"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 93,
+    "QuestionText": "Which tool is used to migrate database schema in Entity Framework Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "EF Console"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet ef migrations"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet ef database update"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Both b and c"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 94,
+    "QuestionText": "How do you specify that a controller action returns a JSON result?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "By adding \u0060[Produces(\u0022application/json\u0022)]\u0060"
+      },
+      {
+        "OptionText": "b",
+        "Value": "By returning \u0060JsonResult\u0060"
+      },
+      {
+        "OptionText": "c",
+        "Value": "By setting the content type in \u0060IActionResult\u0060"
+      },
+      {
+        "OptionText": "d",
+        "Value": "All of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 95,
+    "QuestionText": "Which method ensures HTTPS is required for all requests in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "UseHttpsOnly"
+      },
+      {
+        "OptionText": "b",
+        "Value": "RequireHttps"
+      },
+      {
+        "OptionText": "c",
+        "Value": "UseHttpsRedirection"
+      },
+      {
+        "OptionText": "d",
+        "Value": "app.EnforceHttps()"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 96,
+    "QuestionText": "What is the purpose of the \u0060dotnet restore\u0060 command?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "To build the project"
+      },
+      {
+        "OptionText": "b",
+        "Value": "To restore NuGet package dependencies"
+      },
+      {
+        "OptionText": "c",
+        "Value": "To deploy the application"
+      },
+      {
+        "OptionText": "d",
+        "Value": "To update the project configuration"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 97,
+    "QuestionText": "What does the \u0060Program.cs\u0060 file do in an ASP.NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "Initializes the application and its host"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Configures middleware"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Handles database connections"
+      },
+      {
+        "OptionText": "d",
+        "Value": "Manages dependency injection"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 98,
+    "QuestionText": "What is the command to publish a .NET Core application?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "dotnet publish"
+      },
+      {
+        "OptionText": "b",
+        "Value": "dotnet deploy"
+      },
+      {
+        "OptionText": "c",
+        "Value": "dotnet release"
+      },
+      {
+        "OptionText": "d",
+        "Value": "dotnet package"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 99,
+    "QuestionText": "How can you enable detailed SQL logging in Entity Framework Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "By configuring \u0060DbContext\u0060 options"
+      },
+      {
+        "OptionText": "b",
+        "Value": "Using \u0060LogTo\u0060 method in \u0060DbContext\u0060"
+      },
+      {
+        "OptionText": "c",
+        "Value": "Enabling SQL logging in \u0060appsettings.json\u0060"
+      },
+      {
+        "OptionText": "d",
+        "Value": "All of the above"
+      }
+    ],
+    "CorrectOption": ""
+  },
+  {
+    "Id": 100,
+    "QuestionText": "Which middleware is used for authentication in ASP.NET Core?",
+    "Options": [
+      {
+        "OptionText": "a",
+        "Value": "app.UseAuthentication()"
+      },
+      {
+        "OptionText": "b",
+        "Value": "app.UseAuthorization()"
+      },
+      {
+        "OptionText": "c",
+        "Value": "app.EnableAuthentication()"
+      },
+      {
+        "OptionText": "d",
+        "Value": "app.AuthMiddleware()"
+      }
+    ],
+    "CorrectOption": ""
+  }
+]
