@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using revisifyBackened.Interface;
 using revisifyBackened.Models.Dto;
+using System.Xml;
 
 namespace revisifyBackened.Controllers
 {
@@ -36,11 +37,19 @@ namespace revisifyBackened.Controllers
             return Ok(result);
         }
 
-        [HttpGet("Verify-Email")]
+        [HttpGet("VerifyEmail")]
         public async Task<IActionResult> VerifyEmail(string token, string email)
         {
             var verifyEmailResult = await _authService.ConfirmEmail(token, email);
             return Ok(verifyEmailResult);
+        }
+
+        [HttpPost("SaveQuestions")]
+        public async Task<IActionResult> SaveQuestions(IFormFile file, int SubjectId )
+        {
+            var outputFilePath = await _authService.SaveQuestionsAsync(file, SubjectId);
+
+            return Ok(new { Message = "File processed successfully.", OutputFile = outputFilePath });
         }
 
     }

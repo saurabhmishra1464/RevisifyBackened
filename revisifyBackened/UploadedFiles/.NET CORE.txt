@@ -1,0 +1,701 @@
+1. What is .NET Core?
+a) A proprietary framework by Microsoft
+b) A cross-platform, open-source framework for building modern applications
+c) A mobile-only development framework
+d) None of the above
+Answer: b) A cross-platform, open-source framework for building modern applications
+
+2. Which of the following is not a feature of .NET Core?
+a) Cross-platform support
+b) Dependency Injection
+c) Only supports C# language
+d) Modular architecture
+Answer: c) Only supports C# language
+
+3. Which command is used to create a new .NET Core project?
+a) dotnet generate
+b) dotnet new
+c) dotnet start
+d) dotnet init
+Answer: b) dotnet new
+
+4. What does Kestrel in .NET Core refer to?
+a) A database engine
+b) A front-end framework
+c) A cross-platform web server
+d) A logging library
+Answer: c) A cross-platform web server
+
+5. What is the default package manager for .NET Core?
+a) npm
+b) NuGet
+c) Maven
+d) Composer
+Answer: b) NuGet
+
+6. Which file in a .NET Core application is used to configure app-wide settings?
+a) config.xml
+b) app.config
+c) appsettings.json
+d) settings.ini
+Answer: c) appsettings.json
+
+7. What is the purpose of Startup.cs in a .NET Core application?
+a) Handles database connections
+b) Manages middleware configuration and services
+c) Executes background tasks
+d) Manages routing only
+Answer: b) Manages middleware configuration and services
+
+8. How do you restore dependencies in a .NET Core project?
+a) dotnet restore
+b) dotnet build
+c) dotnet run
+d) dotnet dependencies
+Answer: a) dotnet restore
+
+9. Which of these commands publishes a .NET Core application for deployment?
+a) dotnet deploy
+b) dotnet package
+c) dotnet publish
+d) dotnet export
+Answer: c) dotnet publish
+
+10. What is Middleware in .NET Core?
+a) A library for creating web servers
+b) A component that processes HTTP requests and responses
+c) A database management system
+d) A type of client-side script
+Answer: b) A component that processes HTTP requests and responses
+
+11. Which method in Startup.cs is used to configure middleware in an app?
+a) ConfigureMiddleware
+b) Configure
+c) SetupMiddleware
+d) Setup
+Answer: b) Configure
+
+12. Which interface is used to implement Dependency Injection in .NET Core?
+a) IServiceProvider
+b) IServiceCollection
+c) IDependencyProvider
+d) IMiddlewareProvider
+Answer: b) IServiceCollection
+
+13. In .NET Core, which method is used to add MVC support?
+a) services.AddMvcCore()
+b) services.AddMvc()
+c) services.AddController()
+d) services.EnableMvc()
+Answer: b) services.AddMvc()
+
+14. What does the IConfiguration interface in .NET Core provide?
+a) Logging support
+b) Access to app configuration settings
+c) Routing definitions
+d) Middleware extensions
+Answer: b) Access to app configuration settings
+
+15. What is the default lifespan of a service registered as Scoped in .NET Core?
+a) Per request
+b) Singleton for the application
+c) Lifetime of a thread
+d) Application-wide
+Answer: a) Per request
+
+16. How do you enable Razor Pages in .NET Core?
+a) services.AddRazorPages()
+b) services.EnableRazor()
+c) services.AddMvcCore()
+d) services.EnableMvc()
+Answer: a) services.AddRazorPages()
+
+17. What is the command to run a .NET Core application?
+a) dotnet run
+b) dotnet start
+c) dotnet execute
+d) dotnet launch
+Answer: a) dotnet run
+
+18. What is the name of the cross-platform framework for building APIs in .NET Core?
+a) REST API Core
+b) ASP.NET Core
+c) Web API Core
+d) API.NET
+Answer: b) ASP.NET Core
+
+19. Which logging provider is built-in with .NET Core?
+a) Log4j
+b) Serilog
+c) Console
+d) Winston
+Answer: c) Console
+
+20. What is the role of UseEndpoints in ASP.NET Core?
+a) Registers middleware
+b) Configures database
+c) Defines routing endpoints
+d) Configures app settings
+Answer: c) Defines routing endpoints
+
+21. Which of the following methods is used to configure services in the DI container?
+a) ConfigureServices
+b) Configure
+c) AddServices
+d) InitServices
+Answer: a) ConfigureServices
+
+22. Which HTTP status code represents "Not Found"?
+a) 200
+b) 400
+c) 404
+d) 500
+Answer: c) 404
+
+23. Which protocol is used by default for communication in ASP.NET Core?
+a) FTP
+b) HTTP
+c) SMTP
+d) SSH
+Answer: b) HTTP
+
+24. What does the term "cross-platform" mean in the context of .NET Core?
+a) It supports only Windows operating systems
+b) It can run on multiple operating systems like Windows, Linux, and macOS
+c) It only runs on cloud-based systems
+d) None of the above
+Answer: b) It can run on multiple operating systems like Windows, Linux, and macOS
+
+25. Which keyword is used to declare a Razor directive?
+a) #
+b) @
+c) $
+d) %
+Answer: b) @
+
+26. In which file is the Kestrel server typically configured?
+a) Program.cs
+b) Startup.cs
+c) appsettings.json
+d) web.config
+Answer: a) Program.cs
+
+27. What is the primary purpose of the UseRouting middleware in .NET Core?
+a) To serve static files
+b) To configure routes
+c) To add logging
+d) To manage database connections
+Answer: b) To configure routes
+
+28. How can you enable CORS in a .NET Core application?
+a) UseCorsMiddleware
+b) UseCors
+c) ConfigureCors
+d) AddCorsPolicy
+Answer: b) UseCors
+
+29. What is the file extension for Razor Pages?
+a) .html
+b) .razor
+c) .cshtml
+d) .asp
+Answer: c) .cshtml
+
+30. Which class is responsible for handling HTTP requests and responses?
+a) HttpRequestHandler
+b) HttpContext
+c) HttpService
+d) MiddlewareManager
+Answer: b) HttpContext
+
+31. What is the default port used by Kestrel for an ASP.NET Core application?
+a) 80
+b) 443
+c) 5000
+d) 3000
+Answer: c) 5000
+
+32. Which of these is used to apply authorization policies in ASP.NET Core?
+a) AddAuthorizationPolicy
+b) UseAuthorization
+c) ApplyAuthorization
+d) EnableAuthorization
+Answer: b) UseAuthorization
+
+33. What is the purpose of the `IHostedService` interface?
+a) To manage session state
+b) To run background services
+c) To handle exceptions
+d) To configure authentication
+Answer: b) To run background services
+
+34. Which of the following is NOT a lifecycle for DI services?
+a) Singleton
+b) Scoped
+c) Per-thread
+d) Transient
+Answer: c) Per-thread
+
+35. How do you specify a static file directory in .NET Core?
+a) UseStaticFiles
+b) AddStaticFiles
+c) ConfigureStaticFiles
+d) SetStaticFiles
+Answer: a) UseStaticFiles
+
+36. What is the purpose of the `MapControllerRoute` method?
+a) To configure middleware
+b) To define route templates for controllers
+c) To log requests
+d) To set up static file paths
+Answer: b) To define route templates for controllers
+
+37. What is the primary use of `IOptions<T>` in ASP.NET Core?
+a) To configure database options
+b) To access strongly typed configuration settings
+c) To enable routing
+d) To register middleware
+Answer: b) To access strongly typed configuration settings
+
+38. How do you serve JSON data in a controller?
+a) Use JsonSerializer
+b) Return a JsonResult
+c) Use JsonContent
+d) Return a View
+Answer: b) Return a JsonResult
+
+39. What is the purpose of the `app.UseDeveloperExceptionPage()` middleware?
+a) To display detailed error pages during development
+b) To log exceptions to a database
+c) To enable exception handling for production
+d) To restrict exceptions to admin users only
+Answer: a) To display detailed error pages during development
+
+40. Which command is used to update a package in .NET Core?
+a) dotnet restore
+b) dotnet update
+c) dotnet add package
+d) dotnet upgrade
+Answer: c) dotnet add package
+
+Remaining questions can be added similarly in this format.
+
+41. Which framework is used for testing in .NET Core by default?
+a) NUnit
+b) MSTest
+c) xUnit
+d) Jasmine
+Answer: c) xUnit
+
+42. What is the purpose of the `AddDbContext` method in ASP.NET Core?
+a) To enable logging
+b) To register the database context with the DI container
+c) To configure routing
+d) To add static files
+Answer: b) To register the database context with the DI container
+
+43. Which ASP.NET Core feature helps manage app secrets during development?
+a) appsettings.json
+b) KeyVault
+c) Secret Manager
+d) Environment Variables
+Answer: c) Secret Manager
+
+44. What is the purpose of the `HttpClient` class?
+a) To handle authentication
+b) To send HTTP requests and receive HTTP responses
+c) To log requests
+d) To handle routing
+Answer: b) To send HTTP requests and receive HTTP responses
+
+45. Which middleware is used for exception handling in production?
+a) UseDeveloperExceptionPage
+b) UseCustomExceptionPage
+c) UseExceptionHandler
+d) UseProductionHandler
+Answer: c) UseExceptionHandler
+
+46. What is the purpose of the `ConfigureServices` method in the `Startup.cs` file?
+a) To configure middleware
+b) To configure dependency injection services
+c) To register routing
+d) To initialize the application
+Answer: b) To configure dependency injection services
+
+47. Which lifecycle ensures that a new instance of a service is created each time it is requested?
+a) Singleton
+b) Scoped
+c) Transient
+d) None of the above
+Answer: c) Transient
+
+48. What does `IActionResult` represent in an ASP.NET Core controller?
+a) A model class
+b) An interface for action results
+c) A database query result
+d) None of the above
+Answer: b) An interface for action results
+
+49. Which of the following is NOT a valid middleware method in ASP.NET Core?
+a) UseEndpoints
+b) UseAuthentication
+c) UseDatabase
+d) UseStaticFiles
+Answer: c) UseDatabase
+
+50. How do you enable HTTPS redirection in ASP.NET Core?
+a) UseHttpsRedirection
+b) EnableHttps
+c) ConfigureHttps
+d) AddHttps
+Answer: a) UseHttpsRedirection
+
+51. What is `ViewBag` used for in Razor Pages?
+a) Passing data from the controller to the view
+b) Storing user session information
+c) Querying database records
+d) Logging data
+Answer: a) Passing data from the controller to the view
+
+52. Which of these is a valid return type for a controller action method?
+a) string
+b) IActionResult
+c) JsonResult
+d) All of the above
+Answer: d) All of the above
+
+53. What does the `services.AddSwaggerGen()` method do?
+a) Configures middleware for JSON serialization
+b) Enables Swagger API documentation generation
+c) Adds custom middleware for API versioning
+d) Configures the database
+Answer: b) Enables Swagger API documentation generation
+
+54. Which environment variable is commonly used to set the environment in ASP.NET Core?
+a) DOTNET_ENVIRONMENT
+b) ASPNET_ENVIRONMENT
+c) ENV
+d) APPLICATION_ENVIRONMENT
+Answer: b) ASPNET_ENVIRONMENT
+
+55. What is the primary role of the `ModelState` object?
+a) Handles authentication state
+b) Validates input data in controllers
+c) Manages dependency injection
+d) Configures application settings
+Answer: b) Validates input data in controllers
+
+56. How can you ensure an API supports multiple versions in ASP.NET Core?
+a) UseVersionedAPI
+b) UseAPIVersioning
+c) EnableAPIVersions
+d) AddAPIVersioning
+Answer: d) AddAPIVersioning
+
+57. What is the purpose of the `FromBody` attribute in an API action method?
+a) To map route parameters
+b) To bind the HTTP request body to a parameter
+c) To bind query string parameters
+d) To handle file uploads
+Answer: b) To bind the HTTP request body to a parameter
+
+58. Which class is used for strongly-typed logging in ASP.NET Core?
+a) ILogger
+b) Logger
+c) LogWriter
+d) LogHandler
+Answer: a) ILogger
+
+59. How do you specify custom middleware in ASP.NET Core?
+a) UseMiddleware<T>
+b) AddMiddleware
+c) CreateMiddleware
+d) CustomMiddleware
+Answer: a) UseMiddleware<T>
+
+60. What is the purpose of the `app.UseCors` method?
+a) To serve static files
+b) To configure Cross-Origin Resource Sharing policies
+c) To handle authentication
+d) To enable logging
+Answer: b) To configure Cross-Origin Resource Sharing policies
+
+61. Which template is used for creating Web APIs in .NET Core?
+a) dotnet new web
+b) dotnet new mvc
+c) dotnet new webapi
+d) dotnet new razor
+Answer: c) dotnet new webapi
+
+62. What does the `Entity Framework` in .NET Core provide?
+a) A front-end framework
+b) An ORM for interacting with databases
+c) A testing framework
+d) Middleware for routing
+Answer: b) An ORM for interacting with databases
+
+63. What is the purpose of `services.AddHttpClient()` in DI?
+a) To enable logging
+b) To register and manage `HttpClient` instances
+c) To configure CORS
+d) To handle database connections
+Answer: b) To register and manage `HttpClient` instances
+
+64. How do you configure routing for Razor Pages in .NET Core?
+a) UseMvc
+b) UseRouting
+c) MapRazorPages
+d) AddRouting
+Answer: c) MapRazorPages
+
+65. Which attribute ensures an API endpoint only accepts GET requests?
+a) [AcceptGet]
+b) [HttpGet]
+c) [OnlyGet]
+d) [RouteGet]
+Answer: b) [HttpGet]
+
+66. What is the command to add a NuGet package in a .NET Core project?
+a) dotnet nuget add
+b) dotnet add package
+c) dotnet install
+d) dotnet package install
+Answer: b) dotnet add package
+
+67. Which attribute is used to define route parameters in ASP.NET Core?
+a) [FromQuery]
+b) [FromRoute]
+c) [FromPath]
+d) [FromBody]
+Answer: b) [FromRoute]
+
+68. Which library is used for real-time communication in ASP.NET Core?
+a) SignalR
+b) Entity Framework
+c) Swagger
+d) Blazor
+Answer: a) SignalR
+
+69. What is the purpose of the `app.UseStaticFiles()` method?
+a) To serve static files like CSS, JS, and images
+b) To configure database options
+c) To log HTTP requests
+d) To manage middleware
+Answer: a) To serve static files like CSS, JS, and images
+
+70. What is Blazor in the context of .NET Core?
+a) A testing framework
+b) A front-end framework for building web UIs with C#
+c) A logging library
+d) A database ORM
+Answer: b) A front-end framework for building web UIs with C#
+
+71. What is the main purpose of Kestrel in ASP.NET Core?
+a) To serve as a reverse proxy server
+b) To act as a cross-platform web server
+c) To handle logging in the application
+d) To manage database connections
+Answer: b) To act as a cross-platform web server
+
+72. Which command is used to run a .NET Core application?
+a) dotnet compile
+b) dotnet build
+c) dotnet run
+d) dotnet execute
+Answer: c) dotnet run
+
+73. In which file are application settings typically stored in ASP.NET Core?
+a) app.config
+b) appsettings.json
+c) web.config
+d) settings.config
+Answer: b) appsettings.json
+
+74. How can you inject a dependency into a controller in ASP.NET Core?
+a) Using a constructor
+b) Using a static method
+c) Using a private method
+d) Using reflection
+Answer: a) Using a constructor
+
+75. What is the purpose of the `app.UseDeveloperExceptionPage()` middleware?
+a) To enable custom exception handling in production
+b) To display detailed error pages during development
+c) To log all requests
+d) To configure routing
+Answer: b) To display detailed error pages during development
+
+76. What does the `services.AddControllers()` method do in ASP.NET Core?
+a) Adds support for MVC and API controllers
+b) Configures routing
+c) Adds static file support
+d) Registers middleware for exception handling
+Answer: a) Adds support for MVC and API controllers
+
+77. Which of the following is used to store sensitive configuration data during development?
+a) appsettings.json
+b) Secret Manager
+c) Environment Variables
+d) Both b and c
+Answer: d) Both b and c
+
+78. Which middleware component is required to serve Razor Pages?
+a) UseEndpoints
+b) UseRazorPages
+c) MapRazorPages
+d) AddRazorPages
+Answer: c) MapRazorPages
+
+79. How do you register a service with singleton lifetime in ASP.NET Core?
+a) services.AddSingleton<TService>();
+b) services.AddScoped<TService>();
+c) services.AddTransient<TService>();
+d) services.RegisterSingleton<TService>();
+Answer: a) services.AddSingleton<TService>();
+
+80. What does the `IConfiguration` interface provide access to?
+a) Logging services
+b) Middleware components
+c) Configuration settings
+d) Database services
+Answer: c) Configuration settings
+
+81. What is the default JSON library used in ASP.NET Core 3.0 and later?
+a) Newtonsoft.Json
+b) System.Text.Json
+c) Json.NET
+d) ASPNet.Json
+Answer: b) System.Text.Json
+
+82. What is the purpose of the `Configure` method in the `Startup` class?
+a) To configure database settings
+b) To configure the request processing pipeline
+c) To register application services
+d) To initialize logging
+Answer: b) To configure the request processing pipeline
+
+83. Which attribute allows defining a default route in ASP.NET Core controllers?
+a) [Route]
+b) [HttpGet]
+c) [ApiController]
+d) [DefaultRoute]
+Answer: a) [Route]
+
+84. How can you specify a default value for a route parameter in ASP.NET Core?
+a) Using the `[RouteDefault]` attribute
+b) Setting the default value in `appsettings.json`
+c) Using the `routes.MapDefaultRoute` method
+d) Specifying the default value in the route template
+Answer: d) Specifying the default value in the route template
+
+85. Which package is required to enable Entity Framework Core in a .NET Core project?
+a) Microsoft.EntityFrameworkCore
+b) Microsoft.EntityFramework
+c) Microsoft.Database.EF
+d) Microsoft.CoreEF
+Answer: a) Microsoft.EntityFrameworkCore
+
+86. What is the primary purpose of the `Startup` class in an ASP.NET Core application?
+a) To initialize the database
+b) To configure services and middleware
+c) To handle logging
+d) To define application settings
+Answer: b) To configure services and middleware
+
+87. Which HTTP status code indicates that an API resource was successfully created?
+a) 200 OK
+b) 201 Created
+c) 204 No Content
+d) 400 Bad Request
+Answer: b) 201 Created
+
+88. How do you configure CORS in an ASP.NET Core application?
+a) UseCORS
+b) ConfigureCORS
+c) services.AddCors()
+d) app.UseCorsPolicy()
+Answer: c) services.AddCors()
+
+89. Which namespace is used for working with dependency injection in ASP.NET Core?
+a) Microsoft.Extensions.DependencyInjection
+b) Microsoft.AspNetCore.DI
+c) System.DI
+d) Microsoft.AspNetCore.DependencyInjection
+Answer: a) Microsoft.Extensions.DependencyInjection
+
+90. How can you run an ASP.NET Core application on a specific URL?
+a) Using the `UseUrls` method in `Program.cs`
+b) Specifying the URL in `appsettings.json`
+c) Setting the URL in environment variables
+d) All of the above
+Answer: d) All of the above
+
+91. What does the `[ApiController]` attribute do in ASP.NET Core?
+a) Enables MVC routing
+b) Adds automatic model state validation
+c) Logs API requests
+d) Configures API versioning
+Answer: b) Adds automatic model state validation
+
+92. How do you enable session state in ASP.NET Core?
+a) services.AddSession()
+b) app.UseSession()
+c) Both a and b
+d) sessions.Enable()
+Answer: c) Both a and b
+
+93. Which tool is used to migrate database schema in Entity Framework Core?
+a) EF Console
+b) dotnet ef migrations
+c) dotnet ef database update
+d) Both b and c
+Answer: d) Both b and c
+
+94. How do you specify that a controller action returns a JSON result?
+a) By adding `[Produces("application/json")]`
+b) By returning `JsonResult`
+c) By setting the content type in `IActionResult`
+d) All of the above
+Answer: d) All of the above
+
+95. Which method ensures HTTPS is required for all requests in ASP.NET Core?
+a) UseHttpsOnly
+b) RequireHttps
+c) UseHttpsRedirection
+d) app.EnforceHttps()
+Answer: c) UseHttpsRedirection
+
+96. What is the purpose of the `dotnet restore` command?
+a) To build the project
+b) To restore NuGet package dependencies
+c) To deploy the application
+d) To update the project configuration
+Answer: b) To restore NuGet package dependencies
+
+97. What does the `Program.cs` file do in an ASP.NET Core application?
+a) Initializes the application and its host
+b) Configures middleware
+c) Handles database connections
+d) Manages dependency injection
+Answer: a) Initializes the application and its host
+
+98. What is the command to publish a .NET Core application?
+a) dotnet publish
+b) dotnet deploy
+c) dotnet release
+d) dotnet package
+Answer: a) dotnet publish
+
+99. How can you enable detailed SQL logging in Entity Framework Core?
+a) By configuring `DbContext` options
+b) Using `LogTo` method in `DbContext`
+c) Enabling SQL logging in `appsettings.json`
+d) All of the above
+Answer: d) All of the above
+
+100. Which middleware is used for authentication in ASP.NET Core?
+a) app.UseAuthentication()
+b) app.UseAuthorization()
+c) app.EnableAuthentication()
+d) app.AuthMiddleware()
+Answer: a) app.UseAuthentication()

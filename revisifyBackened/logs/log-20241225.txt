@@ -1,0 +1,175 @@
+2024-12-25 00:15:20.007 +05:30 [INF] HTTP OPTIONS /api/Auth/VerifyEmail responded 204 in 15.2160 ms
+2024-12-25 00:15:20.100 +05:30 [INF] HTTP POST /api/Auth/VerifyEmail responded 405 in 33.6224 ms
+2024-12-25 00:23:52.734 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 400 in 605.0547 ms
+2024-12-25 00:23:54.409 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 400 in 27.9763 ms
+2024-12-25 00:30:44.936 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 15482.3835 ms
+2024-12-25 00:31:04.357 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.6116 ms
+2024-12-25 00:31:07.760 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 3381.4870 ms
+2024-12-25 00:31:20.375 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0949 ms
+2024-12-25 00:31:20.898 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 509.6669 ms
+2024-12-25 22:48:37.802 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-25 22:48:38.137 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-25 22:48:38.329 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-25 22:48:38.599 +05:30 [INF] Hosting environment: Development
+2024-12-25 22:48:38.798 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2024-12-25 22:49:42.101 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.0003 ms
+2024-12-25 22:50:00.216 +05:30 [WRN] User with email Saurabh1464@gmail.com was not found
+2024-12-25 22:50:00.328 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 18214.6481 ms
+revisifyBackened.ExceptionHandelling.CustomException.NotFoundException: User with email Saurabh1464@gmail.com was not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 113
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-12-25 22:50:00.382 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+revisifyBackened.ExceptionHandelling.CustomException.NotFoundException: User with email Saurabh1464@gmail.com was not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 113
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-12-25 22:50:00.398 +05:30 [ERR] Exception occurred: User with email Saurabh1464@gmail.com was not found
+revisifyBackened.ExceptionHandelling.CustomException.NotFoundException: User with email Saurabh1464@gmail.com was not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 113
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-12-25 22:51:01.272 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 8.0044 ms
+2024-12-25 22:51:19.105 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 17824.2692 ms
+2024-12-25 22:51:21.673 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 4.2778 ms
+2024-12-25 22:52:49.586 +05:30 [INF] Now listening on: https://localhost:7064
+2024-12-25 22:52:49.659 +05:30 [INF] Now listening on: http://localhost:5159
+2024-12-25 22:52:49.667 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-25 22:52:49.673 +05:30 [INF] Hosting environment: Development
+2024-12-25 22:52:49.675 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2024-12-25 22:52:56.065 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 6.4756 ms
+2024-12-25 22:53:21.015 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 24808.1162 ms
+2024-12-25 22:54:13.363 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 1.0334 ms
+2024-12-25 22:54:15.366 +05:30 [INF] User registered successfully: admin@example.com
+2024-12-25 22:54:15.378 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 2005.0451 ms
+2024-12-25 22:54:20.260 +05:30 [INF] Email sent successfully to admin@example.com, saurabhmishra1464@gmail.com
+2024-12-25 22:54:26.363 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1822 ms
+2024-12-25 22:54:29.782 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 3408.2680 ms
+revisifyBackened.ExceptionHandelling.CustomException.EmailNotConfirmedException: Email not confirmed. Please confirm your email to proceed.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 125
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-12-25 22:54:29.832 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+revisifyBackened.ExceptionHandelling.CustomException.EmailNotConfirmedException: Email not confirmed. Please confirm your email to proceed.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 125
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-12-25 22:54:29.849 +05:30 [ERR] Exception occurred: Email not confirmed. Please confirm your email to proceed.
+revisifyBackened.ExceptionHandelling.CustomException.EmailNotConfirmedException: Email not confirmed. Please confirm your email to proceed.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 125
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-12-25 22:54:48.933 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 2609.1936 ms
+2024-12-25 22:55:05.732 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 814.0820 ms
+2024-12-25 22:55:10.421 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 29.9437 ms
+2024-12-25 22:55:49.172 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 29667.2460 ms
+2024-12-25 22:55:52.064 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 2886.3223 ms
+2024-12-25 22:56:11.604 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1730 ms
+2024-12-25 22:56:11.816 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 206.2730 ms
+2024-12-25 22:57:02.037 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 92.3765 ms
+2024-12-25 23:13:00.381 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.1226 ms
+2024-12-25 23:13:02.654 +05:30 [INF] User registered successfully: teacher@example.com
+2024-12-25 23:13:02.670 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 2058.8948 ms
+2024-12-25 23:13:06.755 +05:30 [INF] Email sent successfully to teacher@example.com, saurabhmishra1464@gmail.com
+2024-12-25 23:21:21.929 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.8792 ms
+2024-12-25 23:21:22.635 +05:30 [INF] User registered successfully: testuer@yopmail.com
+2024-12-25 23:21:22.642 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 576.1010 ms
+2024-12-25 23:21:26.711 +05:30 [INF] Email sent successfully to testuer@yopmail.com, saurabhmishra1464@gmail.com
+2024-12-25 23:22:02.970 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.3515 ms
+2024-12-25 23:22:03.027 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 51.2481 ms
+2024-12-25 23:22:19.330 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.4093 ms
+2024-12-25 23:22:19.624 +05:30 [INF] User registered successfully: stude@example.com
+2024-12-25 23:22:19.626 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 283.8370 ms
+2024-12-25 23:22:23.582 +05:30 [INF] Email sent successfully to stude@example.com, saurabhmishra1464@gmail.com
+2024-12-25 23:30:40.333 +05:30 [INF] HTTP GET /api/Auth/VerifyEmail responded 200 in 176.1115 ms
+2024-12-25 23:40:01.757 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.1587 ms
+2024-12-25 23:40:02.304 +05:30 [INF] User registered successfully: test1234@gmail.com
+2024-12-25 23:40:02.310 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 449.2933 ms
+2024-12-25 23:40:06.940 +05:30 [INF] Email sent successfully to test1234@gmail.com, saurabhmishra1464@gmail.com
+2024-12-25 23:40:10.179 +05:30 [INF] HTTP GET /api/Auth/SendConfirmationEmail responded 405 in 0.3594 ms
+2024-12-25 23:41:17.786 +05:30 [INF] HTTP GET /api/Auth/SendConfirmationEmail responded 405 in 6.3446 ms
+2024-12-25 23:42:10.956 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 415 in 130.4102 ms
+2024-12-25 23:42:56.458 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 415 in 5.4246 ms
+2024-12-25 23:43:28.606 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 0.1667 ms
+2024-12-25 23:43:29.260 +05:30 [INF] User registered successfully: adm@example.com
+2024-12-25 23:43:29.268 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 545.6873 ms
+2024-12-25 23:43:33.628 +05:30 [INF] Email sent successfully to adm@example.com, saurabhmishra1464@gmail.com
+2024-12-25 23:43:48.504 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 415 in 2.6952 ms
+2024-12-25 23:51:50.511 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 43.9327 ms
+2024-12-25 23:51:51.615 +05:30 [INF] User registered successfully: swert@gmail.com
+2024-12-25 23:51:51.641 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 1051.1607 ms
+2024-12-25 23:51:56.489 +05:30 [INF] Email sent successfully to swert@gmail.com, saurabhmishra1464@gmail.com
+2024-12-25 23:52:08.392 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 415 in 9.4633 ms
+2024-12-25 23:56:45.750 +05:30 [INF] HTTP OPTIONS /api/Auth/SendConfirmationEmail responded 204 in 0.5374 ms
+2024-12-25 23:56:52.143 +05:30 [INF] HTTP POST /api/Auth/SendConfirmationEmail responded 200 in 6335.4620 ms
+2024-12-25 23:56:56.294 +05:30 [INF] Email sent successfully to swert@gmail.com, saurabhmishra1464@gmail.com

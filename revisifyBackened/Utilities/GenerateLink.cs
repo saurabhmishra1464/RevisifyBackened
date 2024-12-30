@@ -24,7 +24,7 @@ namespace revisifyBackened.Utilities
             var encodedToken = HttpUtility.UrlEncode(token);
             var encodedEmail = HttpUtility.UrlEncode(email);
 
-            return $"{frontendUrl}/auth/verifyEmail?token={encodedToken}&email={encodedEmail}";
+            return $"{frontendUrl}/revisify/auth/verifyEmail?token={encodedToken}&email={encodedEmail}";
         }
     }
 }

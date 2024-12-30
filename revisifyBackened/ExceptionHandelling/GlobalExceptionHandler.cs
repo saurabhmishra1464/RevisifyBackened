@@ -25,7 +25,7 @@ internal sealed class GlobalExceptionHandler : IExceptionHandler
             UnauthorizedAccessException => new ApiResponse<string>("Unauthorized access.", StatusCodes.Status401Unauthorized),
             KeyNotFoundException => new ApiResponse<string>("Resource not found.", StatusCodes.Status404NotFound),
             ArgumentException => new ApiResponse<string>("Invalid argument.", StatusCodes.Status400BadRequest),
-            InvalidOperationException => new ApiResponse<string>("Operation not allowed.", StatusCodes.Status409Conflict),
+            InvalidOperationException => new ApiResponse<string>("A user with this email address already exists.", StatusCodes.Status409Conflict),
             EmailNotConfirmedException => new ApiResponse<string>("Email not confirmed. Please confirm your email to proceed.", StatusCodes.Status400BadRequest),
             UserNotFoundException => new ApiResponse<string>("User Not Found", StatusCodes.Status404NotFound),
             _ => new ApiResponse<string>("An unexpected error occurred. Please try again later.", StatusCodes.Status500InternalServerError)
