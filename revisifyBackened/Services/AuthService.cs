@@ -18,6 +18,9 @@ using System;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Text.RegularExpressions;
 using revisifyBackened.Interface.IRepository;
+using System.Text;
+using System.Security.Cryptography;
+using Microsoft.AspNetCore.Mvc;
 
 namespace revisifyBackened.Services
 {
@@ -200,42 +203,84 @@ namespace revisifyBackened.Services
             };
         }
 
-        public async Task<string> SaveQuestionsAsync(IFormFile file, int SubjectId)
+        public async Task<ApiResponse<object>> UploadQuestionImage(IFormFile imageFile, int questionId)
+        {
+            if (imageFile == null || imageFile.Length == 0)
+            {
+                throw new ArgumentException("No file uploaded.");
+            }
+
+            if (questionId <= 0)
+            {
+                throw new ArgumentException("Invalid QuestionId.");
+            }
+
+            // Generate a unique filename for the image
+            var fileExtension = Path.GetExtension(imageFile.FileName);
+            var imageFileName = $"{Guid.NewGuid()}{fileExtension}";
+
+            // Define the path where the image will be stored
+            var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedImages", imageFileName);
+
+            // Save the image to the file system
+            using (var stream = new FileStream(imagePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            // Create the image URL (relative to the web server)
+            var imageUrl = $"/UploadedImages/{imageFileName}";
+
+            // Update the database to associate the image with the question
+            var question = await _questionRepository.GetQuestionByIdAsync(questionId);
+            if (question == null)
+            {
+                throw new QuestionNotFoundException();
+            }
+
+            // Update the ImageUrl for the question
+            question.ImageUrl = imageUrl;
+            await _questionRepository.SaveImageAsync(question);
+
+            // Return the image URL
+            return new ApiResponse<object>
+            {
+                IsSuccess = true,
+                StatusCode = 200,
+                Message = $"Image saved for question id: {question.Id}",
+                Data = null
+            };
+        }
+
+        public async Task<ApiResponse<object>> SaveQuestionsAsync(IFormFile file,int SubjectId)
         {
             if (file == null || file.Length == 0)
             {
                 throw new ArgumentException("No file uploaded.");
             }
+            
             // Save the uploaded file temporarily
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles", file.FileName);
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
             }
-
+          
             // Read the content from the file
             string rawData = System.IO.File.ReadAllText(filePath);
 
             // Convert the raw data to a list of questions using the ConvertToJson method
             var questions = ConvertToJson(rawData, SubjectId);
+           var totalCountQuestions = questions.Count;
             await _questionRepository.SaveQuestionsAsync(questions);
             // Serialize the questions to JSON format
-            string json = JsonSerializer.Serialize(questions, new JsonSerializerOptions { WriteIndented = true });
-
-            // Define the output file path for the JSON file
-            var outputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "OutputFiles", "questions.json");
-
-            // Ensure the output directory exists
-            var outputDir = Path.GetDirectoryName(outputFilePath);
-            if (!Directory.Exists(outputDir))
+            return new ApiResponse<object>
             {
-                Directory.CreateDirectory(outputDir);
-            }
-
-            // Save the JSON to a file
-            System.IO.File.WriteAllText(outputFilePath, json);
-
-            return outputFilePath; // Return the output file path or any result you need
+                IsSuccess = true,
+                StatusCode = 200,
+                Message = $"Questions saved succesfully, {totalCountQuestions}",
+                Data = null
+            };
         } 
         public async Task<ApiResponse<object>> ConfirmEmail(string token, string email)
         {
@@ -361,17 +406,31 @@ namespace revisifyBackened.Services
                             }
                         }
 
-                        questions.Add(new Question
+                        var question = new Question
                         {
                             QuestionText = questionText,
                             Options = options,
                             CorrectOption = correctAnswer,
-                            SubjectId = SubjectId
-                        });
+                            SubjectId = SubjectId,
+                            CodeHash = GenerateQuestionHash(questionText, options)
+                        };
+
+                        questions.Add(question);
+
                     }
                 }
             }
             return questions;
+        }
+
+        private static string GenerateQuestionHash(string questionText, List<Option> options)
+        {
+            var contentToHash = questionText + string.Join("", options.Select(o => o.Value));
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(contentToHash));
+                return Convert.ToBase64String(hashBytes);
+            }
         }
     }
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using revisifyBackened.Interface;
+using revisifyBackened.Models;
 using revisifyBackened.Models.Dto;
 using System.Xml;
 
@@ -49,8 +50,16 @@ namespace revisifyBackened.Controllers
         {
             var outputFilePath = await _authService.SaveQuestionsAsync(file, SubjectId);
 
-            return Ok(new { Message = "File processed successfully.", OutputFile = outputFilePath });
+            return Ok(outputFilePath);
         }
+
+        [HttpPost("UploadQuestionImage")]
+        public async Task<IActionResult> UploadQuestionImage(IFormFile imageFile, int questionId)
+        {
+            var outputFilePath = await _authService.UploadQuestionImage(imageFile, questionId);
+            return Ok(outputFilePath);
+        }
+
 
     }
 }

@@ -28,6 +28,7 @@ internal sealed class GlobalExceptionHandler : IExceptionHandler
             InvalidOperationException => new ApiResponse<string>("A user with this email address already exists.", StatusCodes.Status409Conflict),
             EmailNotConfirmedException => new ApiResponse<string>("Email not confirmed. Please confirm your email to proceed.", StatusCodes.Status400BadRequest),
             UserNotFoundException => new ApiResponse<string>("User Not Found", StatusCodes.Status404NotFound),
+            QuestionNotFoundException => new ApiResponse<string>("Question Not Found", StatusCodes.Status404NotFound),
             _ => new ApiResponse<string>("An unexpected error occurred. Please try again later.", StatusCodes.Status500InternalServerError)
         };
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using revisifyBackened.Data;
 
@@ -11,9 +12,11 @@ using revisifyBackened.Data;
 namespace revisifyBackened.Migrations
 {
     [DbContext(typeof(RevisifyContext))]
-    partial class RevisifyContextModelSnapshot : ModelSnapshot
+    [Migration("20241230160611_changeinmodel")]
+    partial class changeinmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -292,9 +295,6 @@ namespace revisifyBackened.Migrations
 
                     b.Property<string>("CorrectOption")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("QuestionText")

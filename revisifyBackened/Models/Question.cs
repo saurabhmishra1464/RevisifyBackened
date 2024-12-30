@@ -16,5 +16,7 @@ namespace revisifyBackened.Models
         [Required]
         public string CorrectOption { get; set; }
         public Subject Subject { get; set; }
+        public string CodeHash { get; set; }
+        public string? ImageUrl { get; set; }
     }
 }
