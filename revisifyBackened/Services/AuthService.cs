@@ -251,7 +251,15 @@ namespace revisifyBackened.Services
                 Data = null
             };
         }
-
+        public async Task<ApiResponse<object>> GetAllSubjectsAsync()
+        {
+            var subjects = await _questionRepository.GetAllSubjectsAsync();
+            if (!subjects.Any())
+            {
+                return new ApiResponse<object>("No subjects found", 404);
+            }
+            return new ApiResponse<object>(subjects, 200);
+        }
         public async Task<ApiResponse<object>> SaveQuestionsAsync(IFormFile file,int SubjectId)
         {
             if (file == null || file.Length == 0)
@@ -406,13 +414,28 @@ namespace revisifyBackened.Services
                             }
                         }
 
+                        string difficulty = "";
+                        foreach (var line in lines)
+                        {
+                            if (line.Trim().StartsWith("Difficulty:"))
+                            {
+                                var difficultyMatch = Regex.Match(line, @"Difficulty:\s+(.+)");
+                                if (difficultyMatch.Success)
+                                {
+                                    difficulty = difficultyMatch.Groups[1].Value;
+                                    break;
+                                }
+                            }
+                        }
+
                         var question = new Question
                         {
                             QuestionText = questionText,
                             Options = options,
                             CorrectOption = correctAnswer,
                             SubjectId = SubjectId,
-                            CodeHash = GenerateQuestionHash(questionText, options)
+                            CodeHash = GenerateQuestionHash(questionText, options),
+                            Difficulty = difficulty
                         };
 
                         questions.Add(question);
