@@ -1,0 +1,240 @@
+2025-01-02 13:10:57.522 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 13:10:57.590 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 13:10:57.727 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 13:10:58.267 +05:30 [INF] Hosting environment: Development
+2025-01-02 13:10:58.307 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 13:32:07.180 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 4.0617 ms
+2025-01-02 13:32:15.890 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 8683.6220 ms
+2025-01-02 13:33:12.159 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 11.4894 ms
+2025-01-02 13:33:12.595 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 410.1079 ms
+2025-01-02 13:35:34.529 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.3827 ms
+2025-01-02 13:35:35.229 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 664.4275 ms
+System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 135
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-02 13:35:35.289 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 135
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-01-02 13:35:35.313 +05:30 [ERR] Exception occurred: Attempted to perform an unauthorized operation.
+System.UnauthorizedAccessException: Attempted to perform an unauthorized operation.
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 135
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-01-02 13:35:42.555 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.5345 ms
+2025-01-02 13:35:42.797 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 216.4194 ms
+2025-01-02 13:36:43.461 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1212 ms
+2025-01-02 13:36:43.824 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 243.1181 ms
+2025-01-02 13:38:43.219 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.4118 ms
+2025-01-02 13:38:43.468 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 225.5183 ms
+2025-01-02 13:40:33.657 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.2296 ms
+2025-01-02 13:40:33.894 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 228.5637 ms
+2025-01-02 15:40:52.483 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 15:40:52.512 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 15:40:52.515 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:40:52.516 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:40:52.517 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 15:41:33.013 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 15:41:33.050 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 15:41:33.052 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:41:33.054 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:41:33.055 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 15:42:10.345 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 31711.5063 ms
+2025-01-02 15:43:13.172 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 15:43:13.197 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 15:43:13.200 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 15:43:13.202 +05:30 [INF] Hosting environment: Development
+2025-01-02 15:43:13.203 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 15:49:55.119 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 2779.4899 ms
+2025-01-02 15:52:36.939 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 52.6598 ms
+2025-01-02 15:55:50.518 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 157.8332 ms
+2025-01-02 15:55:51.635 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 20.2671 ms
+2025-01-02 15:57:08.499 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 68114.8136 ms
+2025-01-02 15:57:10.923 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 2382.8790 ms
+2025-01-02 15:57:10.923 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 1341.3961 ms
+2025-01-02 15:58:38.925 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9187.2260 ms
+2025-01-02 15:59:32.753 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 1616.6825 ms
+2025-01-02 16:01:41.984 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 1764.4340 ms
+2025-01-02 16:01:54.713 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 2207.8898 ms
+2025-01-02 16:02:08.424 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6694.9094 ms
+2025-01-02 16:03:07.508 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 1679.4276 ms
+2025-01-02 16:03:10.282 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 1709.0353 ms
+2025-01-02 16:03:12.064 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 745.3852 ms
+2025-01-02 16:03:13.765 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 659.6772 ms
+2025-01-02 16:03:15.578 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 770.6461 ms
+2025-01-02 16:03:17.277 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 624.9415 ms
+2025-01-02 16:03:27.154 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 16:03:27.179 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 16:03:27.181 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 16:03:27.183 +05:30 [INF] Hosting environment: Development
+2025-01-02 16:03:27.185 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 16:03:37.761 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9853.3775 ms
+2025-01-02 16:03:50.094 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 54.2687 ms
+2025-01-02 16:03:50.519 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 151.1030 ms
+2025-01-02 16:04:22.221 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 24.8511 ms
+2025-01-02 16:04:26.860 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 18.3313 ms
+2025-01-02 16:05:05.052 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 29.0447 ms
+2025-01-02 16:09:36.406 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.8691 ms
+2025-01-02 16:09:41.093 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.4503 ms
+2025-01-02 16:09:44.469 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.6517 ms
+2025-01-02 16:09:49.664 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.5735 ms
+2025-01-02 16:11:12.584 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 8.9213 ms
+2025-01-02 16:12:50.325 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 36.3804 ms
+2025-01-02 16:12:53.964 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 19.5454 ms
+2025-01-02 16:12:57.916 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.1819 ms
+2025-01-02 16:13:05.451 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.2514 ms
+2025-01-02 16:13:07.239 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.3471 ms
+2025-01-02 16:13:13.535 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.7163 ms
+2025-01-02 16:13:32.045 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 29.6399 ms
+2025-01-02 16:13:46.278 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.9859 ms
+2025-01-02 16:13:48.174 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 15.0820 ms
+2025-01-02 16:13:49.323 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.4766 ms
+2025-01-02 16:14:08.751 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.2516 ms
+2025-01-02 16:14:47.480 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.9364 ms
+2025-01-02 16:14:48.298 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.0697 ms
+2025-01-02 16:14:49.297 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.9799 ms
+2025-01-02 16:14:51.281 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.9296 ms
+2025-01-02 16:14:52.282 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.5740 ms
+2025-01-02 16:15:14.272 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.7921 ms
+2025-01-02 16:15:28.289 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.7267 ms
+2025-01-02 16:15:33.415 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 24.4153 ms
+2025-01-02 16:15:36.281 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 27.3345 ms
+2025-01-02 16:15:38.222 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.3771 ms
+2025-01-02 16:15:39.026 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 45.8310 ms
+2025-01-02 16:15:39.955 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 286.5306 ms
+2025-01-02 16:15:40.840 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.4909 ms
+2025-01-02 16:15:40.881 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.9286 ms
+2025-01-02 16:15:49.282 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.7431 ms
+2025-01-02 16:15:49.340 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.5335 ms
+2025-01-02 16:15:53.427 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 8.0228 ms
+2025-01-02 16:16:27.985 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.4385 ms
+2025-01-02 20:41:31.750 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 327.9902 ms
+2025-01-02 20:41:31.750 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 85.5886 ms
+2025-01-02 22:21:52.395 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 31.7054 ms
+2025-01-02 22:21:52.475 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 37.0900 ms
+2025-01-02 22:24:07.045 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 17.0803 ms
+2025-01-02 22:24:40.683 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 140.2485 ms
+2025-01-02 22:25:15.783 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 23190.2122 ms
+2025-01-02 22:25:19.557 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3774.1940 ms
+2025-01-02 22:25:19.557 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3772.9341 ms
+2025-01-02 22:25:31.254 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9453.5420 ms
+2025-01-02 22:25:32.722 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.5429 ms
+2025-01-02 22:25:50.662 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 152.8904 ms
+2025-01-02 22:26:03.308 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 52.6374 ms
+2025-01-02 22:27:03.196 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.7664 ms
+2025-01-02 22:27:10.298 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.2460 ms
+2025-01-02 22:27:19.302 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.7535 ms
+2025-01-02 22:27:34.343 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.2414 ms
+2025-01-02 22:27:34.407 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.7412 ms
+2025-01-02 22:27:36.348 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 33.5452 ms
+2025-01-02 22:28:11.490 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.7873 ms
+2025-01-02 22:29:00.820 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 19.4307 ms
+2025-01-02 22:29:13.384 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.1804 ms
+2025-01-02 22:30:25.364 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 51.3777 ms
+2025-01-02 22:30:25.408 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 73.4534 ms
+2025-01-02 22:30:28.279 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.9547 ms
+2025-01-02 22:30:28.310 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.3570 ms
+2025-01-02 22:30:30.411 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 66.5351 ms
+2025-01-02 22:30:30.449 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 105.4860 ms
+2025-01-02 22:30:56.280 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.8220 ms
+2025-01-02 22:30:56.292 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.0023 ms
+2025-01-02 22:31:15.002 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.8986 ms
+2025-01-02 22:34:35.762 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 251.3848 ms
+2025-01-02 22:34:35.799 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 284.9471 ms
+2025-01-02 22:34:41.474 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 46.3531 ms
+2025-01-02 22:38:11.290 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 30.8128 ms
+2025-01-02 22:38:30.825 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 22.6482 ms
+2025-01-02 22:41:25.181 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 15.2881 ms
+2025-01-02 22:43:40.349 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 55.9781 ms
+2025-01-02 22:43:40.410 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 64.5333 ms
+2025-01-02 22:45:51.289 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.4298 ms
+2025-01-02 22:45:51.333 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 23.4972 ms
+2025-01-02 22:46:03.647 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.3309 ms
+2025-01-02 22:46:41.226 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 109.8327 ms
+2025-01-02 22:46:56.706 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.1283 ms
+2025-01-02 22:46:56.722 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 16.2563 ms
+2025-01-02 22:46:57.447 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 8.0340 ms
+2025-01-02 22:48:03.226 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 852.4475 ms
+2025-01-02 22:48:22.302 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.5362 ms
+2025-01-02 22:48:24.313 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.1267 ms
+2025-01-02 22:48:26.303 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.7026 ms
+2025-01-02 22:48:30.283 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.6205 ms
+2025-01-02 22:49:09.321 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 34.6203 ms
+2025-01-02 22:49:20.382 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 175.4114 ms
+2025-01-02 22:49:23.338 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 43.8480 ms
+2025-01-02 22:49:27.472 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 159.4349 ms
+2025-01-02 22:49:32.721 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 25.0516 ms
+2025-01-02 22:52:20.185 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 22:52:20.284 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 22:52:20.302 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 22:52:20.307 +05:30 [INF] Hosting environment: Development
+2025-01-02 22:52:20.314 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 22:52:48.739 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 22:52:48.852 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 22:52:48.977 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 22:52:48.985 +05:30 [INF] Hosting environment: Development
+2025-01-02 22:52:48.991 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 22:52:56.154 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5899.8288 ms
+2025-01-02 22:52:56.154 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 2329.9082 ms
+2025-01-02 22:53:06.150 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 251.9244 ms
+2025-01-02 22:53:19.148 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 22:53:19.206 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 22:53:19.215 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 22:53:19.217 +05:30 [INF] Hosting environment: Development
+2025-01-02 22:53:19.219 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 22:53:25.385 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5813.5261 ms
+2025-01-02 22:54:38.583 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 22:54:38.651 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 22:54:38.657 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 22:54:38.661 +05:30 [INF] Hosting environment: Development
+2025-01-02 22:54:38.662 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 22:54:56.597 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5454.4592 ms
+2025-01-02 22:54:56.597 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7886.0995 ms
+2025-01-02 22:54:58.028 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 246.8430 ms
+2025-01-02 22:54:58.313 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 79.4168 ms
+2025-01-02 22:56:40.712 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-02 22:56:40.782 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-02 22:56:40.786 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-02 22:56:40.794 +05:30 [INF] Hosting environment: Development
+2025-01-02 22:56:40.796 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-02 22:58:06.305 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 65626.7416 ms
+2025-01-02 22:58:17.286 +05:30 [INF] HTTP POST /api/Auth/SaveQuestions responded 200 in 73585.6256 ms
+2025-01-02 22:58:21.095 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 212.8773 ms
+2025-01-02 22:58:46.467 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 69.7239 ms

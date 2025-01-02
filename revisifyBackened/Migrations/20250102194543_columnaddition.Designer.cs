@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using revisifyBackened.Data;
 
@@ -11,9 +12,11 @@ using revisifyBackened.Data;
 namespace revisifyBackened.Migrations
 {
     [DbContext(typeof(RevisifyContext))]
-    partial class RevisifyContextModelSnapshot : ModelSnapshot
+    [Migration("20250102194543_columnaddition")]
+    partial class columnaddition
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

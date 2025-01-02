@@ -18,5 +18,6 @@ namespace revisifyBackened.Models
         public Subject Subject { get; set; }
         public string CodeHash { get; set; }
         public string? ImageUrl { get; set; }
+        public string Difficulty { get; set; }
     }
 }

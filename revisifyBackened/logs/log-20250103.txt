@@ -1,0 +1,23 @@
+2025-01-03 00:13:21.588 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 148.9527 ms
+2025-01-03 00:15:31.946 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 98.3346 ms
+2025-01-03 00:40:16.558 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 334.6076 ms
+2025-01-03 00:41:11.345 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 29.6920 ms
+2025-01-03 00:41:24.910 +05:30 [INF] HTTP POST /api/Auth/SaveQuestions responded 200 in 2453.1726 ms
+2025-01-03 00:41:27.356 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.7121 ms
+2025-01-03 00:41:44.356 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 53.6504 ms
+2025-01-03 00:44:14.628 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 90.2111 ms
+2025-01-03 01:16:13.777 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-03 01:16:13.852 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-03 01:16:13.857 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-03 01:16:13.859 +05:30 [INF] Hosting environment: Development
+2025-01-03 01:16:13.861 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-03 01:16:27.214 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3708.2147 ms
+2025-01-03 01:16:27.214 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6308.1896 ms
+2025-01-03 01:16:31.327 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 216.0011 ms
+2025-01-03 01:16:51.921 +05:30 [INF] HTTP POST /api/Auth/SaveQuestions responded 200 in 4824.8062 ms
+2025-01-03 01:16:54.196 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.7611 ms
+2025-01-03 01:17:32.140 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.3700 ms
+2025-01-03 01:18:26.224 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 173.9029 ms
+2025-01-03 01:19:53.414 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 76.3954 ms
+2025-01-03 01:21:18.821 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.5573 ms
+2025-01-03 01:26:15.519 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 193.2296 ms

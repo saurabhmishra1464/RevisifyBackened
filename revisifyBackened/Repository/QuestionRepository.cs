@@ -40,5 +40,10 @@ namespace revisifyBackened.Repository
                 .FirstOrDefaultAsync(q => q.Id == questionId);
         }
 
+        public async Task<IEnumerable<Subject>> GetAllSubjectsAsync()
+        {
+            return await _dbContext.Subjects.ToListAsync();
+        }
+
     }
 }

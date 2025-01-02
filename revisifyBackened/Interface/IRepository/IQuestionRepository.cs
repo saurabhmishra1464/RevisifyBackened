@@ -7,5 +7,6 @@ namespace revisifyBackened.Interface.IRepository
         Task SaveQuestionsAsync(List<Question> questions);
         Task<Question> GetQuestionByIdAsync(int questionId);
         Task SaveImageAsync(Question question);
+        Task<IEnumerable<Subject>> GetAllSubjectsAsync();
     }
 }

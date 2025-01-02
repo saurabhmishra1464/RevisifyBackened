@@ -46,9 +46,9 @@ namespace revisifyBackened.Controllers
         }
 
         [HttpPost("SaveQuestions")]
-        public async Task<IActionResult> SaveQuestions(IFormFile file, int SubjectId )
+        public async Task<IActionResult> SaveQuestions([FromForm] IFormFile file, [FromForm] int subjectId)
         {
-            var outputFilePath = await _authService.SaveQuestionsAsync(file, SubjectId);
+            var outputFilePath = await _authService.SaveQuestionsAsync(file, subjectId);
 
             return Ok(outputFilePath);
         }
@@ -60,6 +60,13 @@ namespace revisifyBackened.Controllers
             return Ok(outputFilePath);
         }
 
+        [HttpGet("GetAllSubjects")]
+        public async Task<ActionResult<ApiResponse<object>>> GetAllSubjects()
+        {
+            var response = await _authService.GetAllSubjectsAsync();
 
+            // Return appropriate HTTP status code based on ApiResponse
+            return Ok(response);
+        }
     }
 }
