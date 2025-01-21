@@ -2,6 +2,7 @@
 using revisifyBackened.Data;
 using revisifyBackened.Interface.IRepository;
 using revisifyBackened.Models;
+using revisifyBackened.Models.Dto;
 
 namespace revisifyBackened.Repository
 {
@@ -43,6 +44,34 @@ namespace revisifyBackened.Repository
         public async Task<IEnumerable<Subject>> GetAllSubjectsAsync()
         {
             return await _dbContext.Subjects.ToListAsync();
+        }
+
+        public async Task<ApiResponse<List<QuestionDto>>> GetAllQuestionsAsync(int subjectId)
+        {
+            var questions = await _dbContext.Questions
+                .Where(q => q.SubjectId == subjectId)
+                .Select(q => new QuestionDto
+                {
+                    Id = q.Id,
+                    QuestionText = q.QuestionText,
+                    CorrectOption = q.CorrectOption,
+                    CodeHash = q.CodeHash,
+                    ImageUrl = q.ImageUrl,
+                    Difficulty = q.Difficulty,
+                    SubjectId = q.SubjectId,
+                    Options = _dbContext.Options
+                        .Where(o => o.QuestionId == q.Id)
+                        .Select(o => new OptionDto
+                        {
+                            Id = o.Id,
+                            OptionText = o.OptionText,
+                            Value = o.Value
+                        })
+                        .ToList()
+                })
+                .ToListAsync();
+
+            return new ApiResponse<List<QuestionDto>>(questions);
         }
 
     }

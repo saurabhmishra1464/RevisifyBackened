@@ -64,9 +64,15 @@ namespace revisifyBackened.Controllers
         public async Task<ActionResult<ApiResponse<object>>> GetAllSubjects()
         {
             var response = await _authService.GetAllSubjectsAsync();
-
-            // Return appropriate HTTP status code based on ApiResponse
             return Ok(response);
         }
+
+        [HttpGet("GetAllQuestions")]
+        public async Task<IActionResult> GetQuestions([FromQuery] int subjectId)
+        {
+            var response = await _authService.GetAllQuestionsAsync(subjectId);
+            return Ok(response);
+        }
+
     }
 }

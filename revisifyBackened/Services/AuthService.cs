@@ -260,6 +260,11 @@ namespace revisifyBackened.Services
             }
             return new ApiResponse<object>(subjects, 200);
         }
+
+        public async Task<ApiResponse<List<QuestionDto>>> GetAllQuestionsAsync(int subjectId)
+        {
+            return await _questionRepository.GetAllQuestionsAsync(subjectId);
+        }
         public async Task<ApiResponse<object>> SaveQuestionsAsync(IFormFile file,int SubjectId)
         {
             if (file == null || file.Length == 0)

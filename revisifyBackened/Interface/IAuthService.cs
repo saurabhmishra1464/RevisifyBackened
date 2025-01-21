@@ -11,6 +11,7 @@ namespace revisifyBackened.Interface
         Task<ApiResponse<object>> SendConfirmationEmail(string email);
         Task<ApiResponse<object>> ConfirmEmail(string token, string email);
         Task<ApiResponse<object>> GetAllSubjectsAsync();
+        Task<ApiResponse<List<QuestionDto>>> GetAllQuestionsAsync(int subjectId);
         Task<ApiResponse<object>> SaveQuestionsAsync(IFormFile file,int SubjectId);
         Task<ApiResponse<object>> UploadQuestionImage(IFormFile imageFile, int questionId);
     }
