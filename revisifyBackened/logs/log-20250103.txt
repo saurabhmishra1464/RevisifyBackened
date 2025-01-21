@@ -21,3 +21,152 @@
 2025-01-03 01:19:53.414 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 76.3954 ms
 2025-01-03 01:21:18.821 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.5573 ms
 2025-01-03 01:26:15.519 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 193.2296 ms
+2025-01-03 15:00:24.773 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-03 15:00:24.820 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-03 15:00:24.823 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-03 15:00:24.825 +05:30 [INF] Hosting environment: Development
+2025-01-03 15:00:24.827 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
+2025-01-03 15:00:41.777 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 3.8897 ms
+2025-01-03 15:00:44.338 +05:30 [WRN] User with email Saurabh1464@gmail.com was not found
+2025-01-03 15:00:44.478 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 2693.2041 ms
+revisifyBackened.ExceptionHandelling.CustomException.UserNotFoundException: User not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 129
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-01-03 15:00:44.509 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+revisifyBackened.ExceptionHandelling.CustomException.UserNotFoundException: User not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 129
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-01-03 15:00:44.524 +05:30 [ERR] Exception occurred: User not found
+revisifyBackened.ExceptionHandelling.CustomException.UserNotFoundException: User not found
+   at revisifyBackened.Services.AuthService.Login(LoginRequestDto loginDto) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Services\AuthService.cs:line 129
+   at revisifyBackened.Controllers.AuthController.Login(LoginRequestDto model) in D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\Controllers\AuthController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-01-03 15:00:51.737 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.8435 ms
+2025-01-03 15:00:53.397 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 1648.7237 ms
+2025-01-03 15:00:58.700 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 59.0422 ms
+2025-01-03 15:01:14.737 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.9754 ms
+2025-01-03 15:05:56.465 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.2508 ms
+2025-01-03 15:06:44.295 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 55.3257 ms
+2025-01-03 15:13:01.293 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 230.1633 ms
+2025-01-03 15:14:16.691 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 42.7539 ms
+2025-01-03 15:14:33.818 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.8025 ms
+2025-01-03 15:14:41.973 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.0406 ms
+2025-01-03 15:17:07.292 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 19.8354 ms
+2025-01-03 15:17:23.286 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.7810 ms
+2025-01-03 15:17:25.581 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 16.4735 ms
+2025-01-03 15:18:18.647 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 21.6935 ms
+2025-01-03 15:22:02.536 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.1432 ms
+2025-01-03 15:22:22.275 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.9751 ms
+2025-01-03 15:22:22.603 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.3417 ms
+2025-01-03 15:22:24.725 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.1837 ms
+2025-01-03 15:36:31.987 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 107.3643 ms
+2025-01-03 15:36:38.914 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.9676 ms
+2025-01-03 15:36:53.290 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.4553 ms
+2025-01-03 15:37:07.278 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.2135 ms
+2025-01-03 15:37:20.279 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 11.8002 ms
+2025-01-03 15:37:22.764 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 16.9751 ms
+2025-01-03 15:37:28.848 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.8764 ms
+2025-01-03 15:38:06.289 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 18.5260 ms
+2025-01-03 15:38:50.309 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.3451 ms
+2025-01-03 15:38:51.240 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.2459 ms
+2025-01-03 15:39:05.323 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 16.3914 ms
+2025-01-03 15:39:05.613 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 57.6122 ms
+2025-01-03 15:39:12.284 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.6000 ms
+2025-01-03 15:39:19.310 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 15.3819 ms
+2025-01-03 15:39:21.296 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.4800 ms
+2025-01-03 15:39:23.192 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.1796 ms
+2025-01-03 15:39:28.707 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.0544 ms
+2025-01-03 15:40:35.308 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 29.4245 ms
+2025-01-03 15:40:37.488 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 105.1065 ms
+2025-01-03 15:40:49.059 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.8322 ms
+2025-01-03 15:40:49.101 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.1261 ms
+2025-01-03 15:40:57.082 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.6796 ms
+2025-01-03 15:40:57.126 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.0587 ms
+2025-01-03 15:41:02.367 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.9700 ms
+2025-01-03 15:41:15.277 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.7131 ms
+2025-01-03 15:41:17.267 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.3558 ms
+2025-01-03 15:41:25.267 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.0988 ms
+2025-01-03 15:41:39.296 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.5849 ms
+2025-01-03 15:41:53.418 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 2.9369 ms
+2025-01-03 15:41:53.821 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.8607 ms
+2025-01-03 15:41:54.656 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.6818 ms
+2025-01-03 15:42:48.369 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 17.9529 ms
+2025-01-03 15:42:59.705 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.3761 ms
+2025-01-03 15:46:17.885 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 70.5792 ms
+2025-01-03 15:46:44.176 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 14.3107 ms
+2025-01-03 15:47:27.327 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 15.4738 ms
+2025-01-03 15:48:42.145 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 35.5456 ms
+2025-01-03 15:49:12.199 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 20.2693 ms
+2025-01-03 15:51:36.003 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 18.7175 ms
+2025-01-03 15:52:43.908 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.5919 ms
+2025-01-03 15:52:45.560 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.6313 ms
+2025-01-03 15:55:06.399 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 15.9951 ms
+2025-01-03 15:55:43.941 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.6940 ms
+2025-01-03 15:55:47.424 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.2984 ms
+2025-01-03 15:56:34.383 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.3894 ms
+2025-01-03 15:56:46.766 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 19.8226 ms
+2025-01-03 15:57:10.271 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.5229 ms
+2025-01-03 15:57:20.718 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.9084 ms
+2025-01-03 16:21:22.059 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 143.3908 ms
+2025-01-03 16:21:53.238 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.3216 ms
+2025-01-03 16:21:53.336 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 87.9243 ms
+2025-01-03 16:22:04.219 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 12.7331 ms
+2025-01-03 16:32:53.787 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 141.2203 ms
+2025-01-03 16:32:59.592 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 13.6200 ms
+2025-01-03 16:38:53.953 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 159.1178 ms
+2025-01-03 16:39:16.748 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 4.2297 ms
+2025-01-03 16:39:34.598 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.9063 ms
+2025-01-03 16:40:12.084 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.6484 ms
+2025-01-03 16:40:51.082 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.1916 ms
+2025-01-03 16:41:31.177 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.0072 ms
+2025-01-03 16:41:53.013 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 30.4917 ms
+2025-01-03 16:45:46.471 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 139.7593 ms
+2025-01-03 16:45:48.889 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 10.4298 ms
+2025-01-03 16:46:01.483 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3.3199 ms
+2025-01-03 16:46:07.752 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.2220 ms
+2025-01-03 16:46:15.393 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 6.3598 ms
+2025-01-03 16:48:00.998 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 27.2969 ms
+2025-01-03 19:13:24.131 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 3264.7169 ms
+2025-01-03 19:33:03.431 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 201.4240 ms
+2025-01-03 19:39:55.088 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 167.4147 ms
+2025-01-03 19:40:00.138 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 17.2208 ms
+2025-01-03 19:40:00.336 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 9.1985 ms
+2025-01-03 19:40:16.538 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 5.3445 ms
+2025-01-03 19:40:25.119 +05:30 [INF] HTTP GET /api/Auth/GetAllSubjects responded 200 in 7.3820 ms

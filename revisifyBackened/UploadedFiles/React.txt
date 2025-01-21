@@ -1,0 +1,702 @@
+1. What is React?
+a) A server-side framework
+b) A JavaScript library for building user interfaces
+c) A programming language
+d) A database management system
+Answer: b) A JavaScript library for building user interfaces
+
+2. Which method is used to update the state in React?
+a) this.setState()
+b) this.updateState()
+c) this.changeState()
+d) this.modifyState()
+Answer: a) this.setState()
+
+3. What is JSX in React?
+a) A JavaScript extension for defining HTML structures in JS
+b) A function to manage state
+c) A method to bind events in React
+d) A template engine
+Answer: a) A JavaScript extension for defining HTML structures in JS
+
+4. Which of the following is a hook in React?
+a) useState()
+b) useRender()
+c) useSelector()
+d) useEffect()
+Answer: a) useState()
+
+5. How do you create a functional component in React?
+a) function MyComponent() { return <div></div>; }
+b) class MyComponent extends React.Component { render() { return <div></div>; }}
+c) const MyComponent = () => <div></div>;
+d) Both a and c
+Answer: d) Both a and c
+
+6. What is the default return value of a component in React?
+a) null
+b) undefined
+c) JSX
+d) An object
+Answer: c) JSX
+
+7. Which lifecycle method is called after a component is rendered for the first time?
+a) componentDidUpdate()
+b) componentDidMount()
+c) render()
+d) componentWillMount()
+Answer: b) componentDidMount()
+
+8. Which of the following hooks is used to handle side effects in React?
+a) useState()
+b) useEffect()
+c) useContext()
+d) useReducer()
+Answer: b) useEffect()
+
+9. What is the purpose of key in React lists?
+a) To track list element updates
+b) To specify the unique ID of an element
+c) To set the background color of each item
+d) To define the order of elements
+Answer: a) To track list element updates
+
+10. Which of the following is used to pass data from a parent component to a child component in React?
+a) props
+b) state
+c) this
+d) render()
+Answer: a) props
+
+11. What does useState() hook do in React?
+a) Sets the initial value of a variable
+b) Updates the state of a component
+c) Returns an array with the current state and a function to update it
+d) Both b and c
+Answer: d) Both b and c
+
+12. Which of the following is used to manage global state in React?
+a) useState()
+b) useContext()
+c) Redux
+d) useEffect()
+Answer: c) Redux
+
+13. How do you handle forms in React?
+a) By using controlled components
+b) By using uncontrolled components
+c) By using document.querySelector()
+d) Both a and b
+Answer: d) Both a and b
+
+14. Which hook is used to memoize expensive calculations in React?
+a) useEffect()
+b) useMemo()
+c) useState()
+d) useCallback()
+Answer: b) useMemo()
+
+15. What is the purpose of useCallback() in React?
+a) To store a function for reusability
+b) To memoize functions
+c) To update the state with an effect
+d) To call a function after the component mounts
+Answer: b) To memoize functions
+
+16. What is React Router used for?
+a) Handling state management
+b) Handling side effects
+c) Navigating between different views or pages
+d) Fetching data from APIs
+Answer: c) Navigating between different views or pages
+
+17. Which method is used to subscribe to a context in React?
+a) useContext()
+b) context.subscribe()
+c) this.context()
+d) useProvider()
+Answer: a) useContext()
+
+18. Which of the following is the correct way to update the state based on previous state in React?
+a) this.setState({ counter: counter + 1 })
+b) this.setState(prevState => ({ counter: prevState.counter + 1 }))
+c) this.state.counter++
+d) this.state.counter = this.state.counter + 1
+Answer: b) this.setState(prevState => ({ counter: prevState.counter + 1 }))
+
+19. Which of the following methods is used to create a new context in React?
+a) React.createContext()
+b) useContext.create()
+c) ContextProvider.create()
+d) new Context()
+Answer: a) React.createContext()
+
+20. What is the correct way to handle asynchronous code in React?
+a) Using setState()
+b) Using useEffect() with async/await
+c) Using componentDidMount()
+d) Using setTimeout()
+Answer: b) Using useEffect() with async/await
+
+21. What does React.Fragment do in React?
+a) It is used to wrap components and avoid adding extra nodes to the DOM
+b) It handles state management
+c) It provides a context for components
+d) It is used for event handling
+Answer: a) It is used to wrap components and avoid adding extra nodes to the DOM
+
+22. Which of the following is true about React Hooks?
+a) They can be used only in class components
+b) They are used for managing state in functional components
+c) They replace the need for Redux
+d) They must always be used in componentDidMount()
+Answer: b) They are used for managing state in functional components
+
+23. What is the purpose of useReducer() in React?
+a) To handle state transitions with a reducer function
+b) To manage context values
+c) To optimize performance by memoizing state
+d) To handle side effects
+Answer: a) To handle state transitions with a reducer function
+
+24. What is the significance of the useEffect() hook in React?
+a) It replaces componentWillUnmount()
+b) It handles component lifecycle events like mounting, updating, and unmounting
+c) It is used for optimizing state
+d) It is used to store context values
+Answer: b) It handles component lifecycle events like mounting, updating, and unmounting
+
+25. What does the dangerouslySetInnerHTML attribute do in React?
+a) It is used to set HTML content from a string, bypassing React's DOM sanitization
+b) It is used to render raw text without HTML tags
+c) It is a method to style an element
+d) It is used to handle events in JSX
+Answer: a) It is used to set HTML content from a string, bypassing React's DOM sanitization
+
+26. How do you prevent unnecessary re-renders in React functional components?
+a) By using React.memo()
+b) By using PureComponent
+c) By using useState()
+d) By using componentDidUpdate()
+Answer: a) By using React.memo()
+
+27. Which of the following is correct for passing props to a child component in React?
+a) <ChildComponent />
+b) <ChildComponent props={value} />
+c) <ChildComponent value={props} />
+d) <ChildComponent value={value} />
+Answer: d) <ChildComponent value={value} />
+
+28. What is the purpose of useEffect dependency array?
+a) To prevent re-running the effect every time
+b) To trigger the effect only when specific values change
+c) To handle side effects in async code
+d) To create context values
+Answer: b) To trigger the effect only when specific values change
+
+29. What is the purpose of the componentWillUnmount() method in React?
+a) To perform cleanup actions before a component is removed from the DOM
+b) To update the state
+c) To fetch data
+d) To update the props
+Answer: a) To perform cleanup actions before a component is removed from the DOM
+
+30. What does setState() do in a React class component?
+a) Sets the component's state and triggers a re-render
+b) Directly modifies the DOM
+c) Fetches data from an API
+d) Initializes the component’s state
+Answer: a) Sets the component's state and triggers a re-render
+
+
+31. What is the purpose of the useCallback hook?
+a) To memoize functions and avoid unnecessary re-renders
+b) To handle asynchronous operations
+c) To handle DOM events
+d) To update state
+Answer: a) To memoize functions and avoid unnecessary re-renders
+
+32. Which of the following is the correct syntax for defining a functional component in React?
+a) class MyComponent extends React.Component {}
+b) const MyComponent = () => {}
+c) function MyComponent() {}
+d) Both b and c
+Answer: d) Both b and c
+
+33. What does the key prop do in React lists?
+a) It identifies each element in a list for reordering
+b) It prevents rendering elements
+c) It specifies the order of elements in a list
+d) It is used to create a unique ID for elements
+Answer: a) It identifies each element in a list for reordering
+
+34. What is the default return type of the useState hook?
+a) A function
+b) A value and a function to update that value
+c) An array of values
+d) An object with key-value pairs
+Answer: b) A value and a function to update that value
+
+35. Which of the following will trigger a re-render in React?
+a) Changing props
+b) Changing state
+c) Calling forceUpdate()
+d) All of the above
+Answer: d) All of the above
+
+36. What is React.memo() used for?
+a) To create new components
+b) To memoize functional components and avoid unnecessary re-renders
+c) To handle form validation
+d) To manage global state
+Answer: b) To memoize functional components and avoid unnecessary re-renders
+
+37. What is the primary reason for using React.lazy()?
+a) For server-side rendering
+b) To load components lazily and split the code into chunks
+c) To manage state globally
+d) For routing
+Answer: b) To load components lazily and split the code into chunks
+
+38. Which of the following can be used to pass data to a component in React?
+a) Props
+b) State
+c) Context
+d) All of the above
+Answer: d) All of the above
+
+39. What will happen if you call setState() multiple times in a single function call in React?
+a) It will trigger multiple re-renders
+b) React batches the updates and triggers a single re-render
+c) It will cause an error
+d) It will cause the component to not render
+Answer: b) React batches the updates and triggers a single re-render
+
+40. What is the useEffect hook used for in React?
+a) To handle side effects in functional components
+b) To define the component's lifecycle
+c) To manage global state
+d) To render JSX
+Answer: a) To handle side effects in functional components
+
+41. What is the React.createContext() used for?
+a) To create global state that can be passed through the component tree
+b) To create event handlers
+c) To handle asynchronous operations
+d) To create routes
+Answer: a) To create global state that can be passed through the component tree
+
+42. Which of the following is true about controlled components in React?
+a) Their value is controlled by React state
+b) They do not manage any state internally
+c) They cannot be used with forms
+d) They are the same as uncontrolled components
+Answer: a) Their value is controlled by React state
+
+43. What is the purpose of useContext in React?
+a) To subscribe to a context and read its value
+b) To create a context
+c) To manage the state globally
+d) To trigger a re-render
+Answer: a) To subscribe to a context and read its value
+
+44. Which of the following is used to pass data between components in React without using props?
+a) State
+b) Context API
+c) Local storage
+d) useEffect
+Answer: b) Context API
+
+45. What is the correct syntax for creating a React Fragment?
+a) <Fragment></Fragment>
+b) <div></div>
+c) <> </>
+d) <React.Fragment></React.Fragment>
+Answer: c) <> </>
+
+46. How do you make sure an effect in useEffect runs only once when a component mounts?
+a) By providing an empty dependency array ([])
+b) By omitting the dependency array
+c) By setting the cleanup function
+d) By using useState
+Answer: a) By providing an empty dependency array ([])
+
+47. What does useReducer in React do?
+a) It allows managing more complex state logic
+b) It simplifies state management for simple applications
+c) It is used for routing
+d) It is used to trigger effects
+Answer: a) It allows managing more complex state logic
+
+48. Which of the following is used to pass a reference to a DOM element in React?
+a) ref
+b) key
+c) state
+d) props
+Answer: a) ref
+
+49. What happens when you use forceUpdate() in React?
+a) It updates the state
+b) It forces the component to re-render without changing its state
+c) It causes an error
+d) It updates the DOM directly
+Answer: b) It forces the component to re-render without changing its state
+
+50. Which method is used to update the state in a class component?
+a) setState()
+b) updateState()
+c) setStateValue()
+d) useState()
+Answer: a) setState()
+
+
+
+51. What is the primary benefit of using React.memo?
+a) Memoizing function components to avoid unnecessary re-renders
+b) Improves server-side rendering
+c) Enhances the performance of class components
+d) Automatically manages state updates
+Answer: a) Memoizing function components to avoid unnecessary re-renders
+
+52. Which React hook can be used to detect changes in a component's props?
+a) useRef
+b) useState
+c) useEffect
+d) useCallback
+Answer: c) useEffect
+
+53. What does the children prop in a React component represent?
+a) A component's props passed to it from its parent
+b) The content passed between the opening and closing tags
+c) The state of a component
+d) The method used to update the component
+Answer: b) The content passed between the opening and closing tags
+
+54. What is the purpose of forwardRef in React?
+a) To pass data between parent and child components
+b) To handle side effects in functional components
+c) To pass a ref down through components
+d) To create a custom hook
+Answer: c) To pass a ref down through components
+
+55. Which of the following is a valid way to conditionally render components in React?
+a) Using if-else statements
+b) Using && operator
+c) Using ternary operators
+d) All of the above
+Answer: d) All of the above
+
+56. How can you optimize performance when using lists in React?
+a) By using key props
+b) By using useMemo for expensive computations
+c) By implementing virtualized lists (e.g., using react-window)
+d) All of the above
+Answer: d) All of the above
+
+57. What is the correct syntax to import a named export in React?
+a) import Component from './Component'
+b) import { Component } from './Component'
+c) import * as Component from './Component'
+d) import Component as './Component'
+Answer: b) import { Component } from './Component'
+
+58. Which hook allows you to run side effects only when specific values change?
+a) useState
+b) useEffect
+c) useCallback
+d) useReducer
+Answer: b) useEffect
+
+59. What is the primary purpose of React.StrictMode?
+a) To increase the performance of React apps
+b) To apply additional checks and warnings
+c) To automatically handle side effects
+d) To simplify React components
+Answer: b) To apply additional checks and warnings
+
+60. Which of the following is NOT a lifecycle method in a class component?
+a) componentDidMount
+b) componentWillUnmount
+c) componentWillReceiveProps
+d) useEffect
+Answer: d) useEffect
+
+61. How do you pass data between components using props in React?
+a) Directly from the parent component to the child component via the props object
+b) Using useState in the child component
+c) Using React.createContext for state sharing
+d) By using React.memo
+Answer: a) Directly from the parent component to the child component via the props object
+
+62. What is the difference between useEffect and useLayoutEffect in React?
+a) useEffect runs before paint, while useLayoutEffect runs after the paint.
+b) useLayoutEffect runs synchronously before the DOM updates, while useEffect runs asynchronously after the DOM updates.
+c) useEffect runs only on initial render, while useLayoutEffect runs on each update.
+d) There is no difference between them.
+Answer: b) useLayoutEffect runs synchronously before the DOM updates, while useEffect runs asynchronously after the DOM updates.
+
+63. What does useRef return in React?
+a) A mutable object that persists across renders
+b) A new state variable
+c) The current value of a prop
+d) A function to update state
+Answer: a) A mutable object that persists across renders
+
+64. What is the purpose of React.Fragment?
+a) To group a list of children without adding extra nodes to the DOM
+b) To handle side effects
+c) To manage form state
+d) To optimize re-renders
+Answer: a) To group a list of children without adding extra nodes to the DOM
+
+65. Which of the following can be used to optimize re-renders in React?
+a) React.memo
+b) shouldComponentUpdate
+c) PureComponent
+d) All of the above
+Answer: d) All of the above
+
+66. Which hook is used to manage forms and input values in React?
+a) useState
+b) useReducer
+c) useEffect
+d) useContext
+Answer: a) useState
+
+67. What is the default value of state in a functional component when using useState?
+a) null
+b) undefined
+c) It can be any initial value you pass as an argument to useState()
+d) An empty array
+Answer: c) It can be any initial value you pass as an argument to useState()
+
+68. Which of the following methods allows a component to re-render when the state changes?
+a) setState() in class components
+b) useState() in functional components
+c) forceUpdate() in class components
+d) All of the above
+Answer: d) All of the above
+
+69. What is useCallback used for in React?
+a) To memoize functions so they don’t get recreated unless the dependencies change
+b) To handle state changes
+c) To manage component lifecycles
+d) To prevent re-renders of functional components
+Answer: a) To memoize functions so they don’t get recreated unless the dependencies change
+
+70. Which method is used to prevent unnecessary re-renders in React functional components?
+a) useMemo
+b) useState
+c) shouldComponentUpdate
+d) React.memo
+Answer: d) React.memo
+
+71. What does the key prop do in React lists?
+a) Helps React identify which items have changed, been added, or removed
+b) Enables list sorting
+c) Sets the visibility of items in a list
+d) It is not necessary for lists
+Answer: a) Helps React identify which items have changed, been added, or removed
+
+72. What is the purpose of useReducer in React?
+a) It is used to manage more complex state logic in React components
+b) It handles asynchronous data fetching
+c) It directly manipulates the DOM
+d) It prevents re-renders
+Answer: a) It is used to manage more complex state logic in React components
+
+73. Which of the following is true about the useEffect hook?
+a) It runs after every render by default
+b) It can be configured to run only when certain dependencies change
+c) It can run asynchronously
+d) All of the above
+Answer: d) All of the above
+
+74. How can you optimize the performance of a React application that has complex nested components?
+a) By using React.memo for child components
+b) By splitting the code using React.lazy
+c) By using useMemo to memoize values
+d) All of the above
+Answer: d) All of the above
+
+75. How can you handle forms in React?
+a) By using useState to manage input values
+b) By using onSubmit to handle form submission
+c) By using controlled components for form inputs
+d) All of the above
+Answer: d) All of the above
+
+76. What is the difference between state and props in React?
+a) state is mutable, props are immutable
+b) state is passed down from parent to child, props are used to manage local data
+c) state and props are the same
+d) state is used only for function components, props are for class components
+Answer: a) state is mutable, props are immutable
+
+77. Which hook is used to handle side effects in function components?
+a) useState
+b) useReducer
+c) useEffect
+d) useContext
+Answer: c) useEffect
+
+78. What does useEffect hook do in React?
+a) It allows running side effects like data fetching, subscriptions, or manual DOM manipulation
+b) It manages state in functional components
+c) It optimizes re-renders by memoizing values
+d) It handles component mounting lifecycle events
+Answer: a) It allows running side effects like data fetching, subscriptions, or manual DOM manipulation
+
+79. What is the return value of useContext in React?
+a) The context object
+b) The current value of the context
+c) A method to update context value
+d) null
+Answer: b) The current value of the context
+
+80. Which of the following helps React detect when to re-render components?
+a) Component's state
+b) Component's props
+c) The key prop in lists
+d) All of the above
+Answer: d) All of the above
+
+81. What is the purpose of the useEffect hook's cleanup function?
+a) To run when the component is unmounted or when dependencies change
+b) To run after every render
+c) To initialize state in the component
+d) To optimize re-renders
+Answer: a) To run when the component is unmounted or when dependencies change
+
+82. How can you optimize state updates in React?
+a) By batching state updates
+b) By using useCallback for callback functions
+c) By using functional updates in setState
+d) All of the above
+Answer: d) All of the above
+
+83. Which of the following hooks can be used to share state across multiple components in React?
+a) useState
+b) useEffect
+c) useContext
+d) useReducer
+Answer: c) useContext
+
+84. What is a higher-order component (HOC) in React?
+a) A function that takes a component and returns a new component
+b) A custom hook used for shared logic
+c) A method used to handle component side effects
+d) A way to manage state within components
+Answer: a) A function that takes a component and returns a new component
+
+85. Which lifecycle method is called when a component is first added to the DOM?
+a) componentDidMount
+b) componentWillMount
+c) componentDidUpdate
+d) useEffect
+Answer: a) componentDidMount
+
+86. Which of the following is NOT a hook provided by React?
+a) useState
+b) useRef
+c) useQuery
+d) useContext
+Answer: c) useQuery
+
+87. What happens when a state is updated using setState() in React?
+a) React re-renders the component
+b) React updates the component without re-rendering
+c) React triggers a componentDidUpdate lifecycle method
+d) Both a and c
+Answer: d) Both a and c
+
+88. Which hook would you use to persist values across renders?
+a) useState
+b) useReducer
+c) useEffect
+d) useRef
+Answer: d) useRef
+
+89. What is the result of using the key prop in React?
+a) It ensures that elements in a list are uniquely identified
+b) It directly manipulates the DOM
+c) It helps manage state updates
+d) It filters duplicate values in lists
+Answer: a) It ensures that elements in a list are uniquely identified
+
+90. What is the purpose of the useMemo hook in React?
+a) To store values that don't change between renders
+b) To memoize expensive computations
+c) To persist values across renders
+d) To manage form data
+Answer: b) To memoize expensive computations
+
+91. How can you update multiple states in a functional component?
+a) By using setState in a class component
+b) By calling useState for each individual state
+c) By using useReducer for managing multiple states
+d) Both b and c
+Answer: d) Both b and c
+
+92. What is the purpose of useLayoutEffect in React?
+a) To perform DOM mutations and layout updates before the browser paints
+b) To fetch data asynchronously
+c) To handle events in functional components
+d) To clean up side effects
+Answer: a) To perform DOM mutations and layout updates before the browser paints
+
+93. Which of the following is used to handle side effects in functional components?
+a) componentDidMount
+b) componentWillUnmount
+c) useEffect
+d) useContext
+Answer: c) useEffect
+
+94. Which hook would you use for optimally memorizing values in a React functional component?
+a) useMemo
+b) useState
+c) useEffect
+d) useContext
+Answer: a) useMemo
+
+95. Which of the following is NOT a valid React hook?
+a) useState
+b) useEffect
+c) useProps
+d) useReducer
+Answer: c) useProps
+
+96. How can you prevent a component from re-rendering when its props haven't changed?
+a) By using React.memo
+b) By using shouldComponentUpdate
+c) By using useMemo
+d) All of the above
+Answer: d) All of the above
+
+97. Which of the following methods are used to handle state in React components?
+a) useState
+b) useReducer
+c) useContext
+d) All of the above
+Answer: d) All of the above
+
+98. What is the main advantage of using useContext over props for passing data in React?
+a) It allows passing data without having to manually propagate props at every level
+b) It is faster than passing props
+c) It handles asynchronous data
+d) It is easier to debug than props
+Answer: a) It allows passing data without having to manually propagate props at every level
+
+99. What is the purpose of React.memo?
+a) To optimize the re-rendering of a component by memoizing its output
+b) To handle context updates
+c) To manage side effects in functional components
+d) To pass refs to components
+Answer: a) To optimize the re-rendering of a component by memoizing its output
+
+100. Which of the following is used to update a component's local state in React?
+a) this.setState()
+b) useState()
+c) useReducer()
+d) All of the above
+Answer: d) All of the above

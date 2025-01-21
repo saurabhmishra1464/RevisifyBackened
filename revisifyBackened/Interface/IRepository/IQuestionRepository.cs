@@ -1,4 +1,5 @@
 ﻿using revisifyBackened.Models;
+using revisifyBackened.Models.Dto;
 
 namespace revisifyBackened.Interface.IRepository
 {
@@ -8,5 +9,6 @@ namespace revisifyBackened.Interface.IRepository
         Task<Question> GetQuestionByIdAsync(int questionId);
         Task SaveImageAsync(Question question);
         Task<IEnumerable<Subject>> GetAllSubjectsAsync();
+        Task<ApiResponse<List<QuestionDto>>> GetAllQuestionsAsync(int subjectId);
     }
 }

@@ -157,3 +157,4 @@ D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\bin\Debug\net8.0\
 D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
 D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\bin\Debug\net8.0\OutputFiles\questions.json
+D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened\bin\Debug\net8.0\appsettings.Production.json

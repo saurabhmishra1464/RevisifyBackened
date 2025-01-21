@@ -112,7 +112,17 @@ builder.Services.AddCors(options =>
 
 builder.Services.Configure<JWTService>(configuration.GetSection("JwtSettings"));
 
-builder.Services.AddDbContext<RevisifyContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+//Sql Server Setup
+if (builder.Environment.IsProduction())
+{
+    Console.WriteLine("--> Using AWS RDS SqlServer Db");
+    builder.Services.AddDbContext<RevisifyContext>(options => options.UseSqlServer(configuration.GetConnectionString("RevisifyConnection")));
+}
+else
+{
+    Console.WriteLine("--> local Db");
+    builder.Services.AddDbContext<RevisifyContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+}
 builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
@@ -135,7 +145,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseExceptionHandler();
 app.UseSerilogRequestLogging();
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseCors("AllowFrontend");
 app.UseCookiePolicy();
 app.UseAuthentication();
