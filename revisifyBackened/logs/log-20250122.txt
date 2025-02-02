@@ -1,0 +1,5 @@
+2025-01-22 21:02:06.319 +05:30 [INF] Now listening on: https://localhost:7064
+2025-01-22 21:02:06.457 +05:30 [INF] Now listening on: http://localhost:5159
+2025-01-22 21:02:06.553 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 21:02:06.603 +05:30 [INF] Hosting environment: Development
+2025-01-22 21:02:06.637 +05:30 [INF] Content root path: D:\FullStack-Revision-WebApp\revisifyBackened\revisifyBackened
