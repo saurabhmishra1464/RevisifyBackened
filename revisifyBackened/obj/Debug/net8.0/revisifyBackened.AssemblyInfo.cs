@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("revisifyBackened")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae76fb3fd6d05824e6f587ad0f0f5dda7199f007")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cd54d1f4fe283d6a182be6bb0fe15ff6f2287f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("revisifyBackened")]
 [assembly: System.Reflection.AssemblyTitleAttribute("revisifyBackened")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
