@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D88261D2-3060-476F-AAC1-D00ACDA7CA06}|TestProject1\\TestProject1.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D88261D2-3060-476F-AAC1-D00ACDA7CA06}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\revisifybackened\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|solutionrelative:revisifybackened\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\revisifybackened\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|solutionrelative:revisifybackened\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\revisifybackened\\interface\\irepository\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|solutionrelative:revisifybackened\\interface\\irepository\\iquestionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\revisifybackened\\models\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|solutionrelative:revisifybackened\\models\\dto\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|d:\\fullstack-revision-webapp\\revisifybackened\\revisifybackened\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30926096-9E77-4F3E-896E-DE3B6B5A5904}|revisifyBackened\\revisifyBackened.csproj|solutionrelative:revisifybackened\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IQuestionRepository.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Interface\\IRepository\\IQuestionRepository.cs",
+              "RelativeDocumentMoniker": "revisifyBackened\\Interface\\IRepository\\IQuestionRepository.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Interface\\IRepository\\IQuestionRepository.cs",
+              "RelativeToolTip": "revisifyBackened\\Interface\\IRepository\\IQuestionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T09:34:17.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionDto.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Models\\Dto\\QuestionDto.cs",
+              "RelativeDocumentMoniker": "revisifyBackened\\Models\\Dto\\QuestionDto.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Models\\Dto\\QuestionDto.cs",
+              "RelativeToolTip": "revisifyBackened\\Models\\Dto\\QuestionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T09:34:13.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "revisifyBackened\\ApiResponse.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\ApiResponse.cs",
+              "RelativeToolTip": "revisifyBackened\\ApiResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T09:31:21.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\TestProject1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestProject1\\UnitTest1.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\TestProject1\\UnitTest1.cs",
+              "RelativeToolTip": "TestProject1\\UnitTest1.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwB0AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T09:06:15.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "revisifyBackened\\Services\\AuthService.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Services\\AuthService.cs",
+              "RelativeToolTip": "revisifyBackened\\Services\\AuthService.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAwwEAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:47:05.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "revisifyBackened\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\FullStack-Revision-WebApp\\revisifyBackened\\revisifyBackened\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "revisifyBackened\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAlwBoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T20:02:58.24Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
